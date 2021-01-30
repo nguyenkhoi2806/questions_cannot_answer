@@ -1,0 +1,160 @@
+Dinh huong 
+code theo kien truc gi 
+Dự án tâm đắt nhất
+kho khan trong du an la gi
+kien thuc opp
+lam the nao toi uu query 700 800 
+
+
+Front End 
+rem: là đơn vị tham chiếu tỷ lệ so với phần tử gốc của website ở đây là thẻ html dựa vào giá trị của thuộc tính font-size
+em: là đơn vị tham chiếu tỷ lệ so với phần tử cha trực tiếp chứa nó hoặc chính nó dựa vào giá trị của thuộc tính là font-size
+
+
+Gamru
+ES5 khac voi es6 ntn? 
+  arrowss function
+  classes
+  enhanced object literals
+  let + const
+  modules 
+  promises
+
+Join() trong javascipt 
+
+Supper trong contructor reactjs? 
+ Khi làm việc với React thì khi viết constructor mà không có super() thì sẽ lỗi. Không viết super(props) thì sẽ không thể dùng được this.props trong constructor
+ Sẽ ra sao khi bạn truyền tham số props vào super(). Khi không gọi super(props) thì bạn sẽ không thể dùng this.props
+
+Vong doi reactjs
+Component Lifecycle là gì? 
+Một loạt các thay đổi mà Component trải qua từ khi nó được tạo ra cho tới khi nó kết thúc (bị hủy).React Component Lifecycle có thể chia ra làm 3 pha chính là: Mounting, Updating và Unmounting.
+
+Mouting: constructor(), render(), componentDidMount(),
+
+Updating: shouldComponentUpdate(), render(), componentDidUpdate()
+Updating có thể được gọi hoặc không, 
+shouldComponentUpdate:   Dung de quan viec co nen render lai hay khong, mac se ve true
+CompomentDidUpdate: Phương thức này được gọi sau khi việc update kết thúc – component với những dữ liệu mới đã được cập nhật xong lên giao diện. Trong phương thức này, bạn có thể xử lý việc lấy dữ liệu từ server, 
+	
+Unmounting: ComponentWillUnMount
+Unmounting là giai đoạn khi React Component bị xoá khỏi DOM tree. Nghĩa là phương thức này cũng chỉ được gọi 1 lần duy nhất. Và quan trọng là những thứ bạn khởi tạo, đăng ký ở componentDidMount() thì bạn phải xoá, huỷ đăng ký trong phương thức componentWillUnmount().
+	
+use strict
+Use strict dịch sang tiếng việt thì có nghĩa là sử dụng sự nghiêm ngặt. Khi một đoạn lệnh được khai báo use strict thì tất cả các dòng code ở phía dưới dòng khai báo use strict sẽ được quản lý một cách nghiêm ngặt hơn về cú pháp.
+
+
+Selector trong css
+
+docusan
+ORM trong laravel
+cach xu ly khi server live bi loi
+
+
+Lifful
+Khi lap trinh quan tam dieu gi
+
+Khi tao  cot trong database quan tam dieu gi
+ - Xem ban chat cua cột đó
+ - Có ảnh hưởng đến record cũ hay ko
+ - Query có nahnh hay ko
+ - xác dinh kieu du lieu
+ - có dể mở rộng hay khong
+ 
+Quy tac thiet ke databases (https://kieuquangvinh.com/31-quy-tac-trong-thiet-ke-co-so-du-lieu/)
+ Càng ít bảng càng tốt.
+ Khóa không nên dài quá.
+ Sử dụng tên được xác định rõ và phù hợp cho các bảng và cột 
+ Sử dụng số ít cho tên bảng
+ Không dùng khoảng trắng cho tên bảng.
+	
+khi up database len server can quan tam dieu gi
+ - Backkup lại bản dữ liệu hiện tại
+ - Dump database moi nhat ve chay local sau do update ban moi nhat => check xem co loi khong neu ko thi up len server, con có thì fix lại
+ 
+Solid priciple on lại 2 cái đầu tiên
+Design partern Factory cụ thể vào code
+
+
+DesignEveloper
+closure trong javascript
+JavaScript Closures là tập hợp bao gồm một hàm và môi trường nơi hàm số đó được khai báo. Ở đây, môi trường bao gồm tất cả những biến cục bộ trong phạm vi hàm số được khai báo. (Để đơn giản, từ nay mình sẽ sử dụng hàm closures khi nói về JavaScript closures).
+
+MessageMedia
+- middleware in reactjs
+-  Nghe tên thì hơi phức tạp nhưng thực sự nó đơn giản lắm, nó là một hàm sẽ modify và được gọi trước khi action được dispatch.
+  Middleware trong Redux được biết đến nhiều nhất trong việc xử lý ASYNC Action - đó là những Action không sẵn sàng ngay khi 1 Action Creator được gọi tới, thông thường ở đây là các API request.
+  https://vuilaptrinh.com/2018-06-18-huong-dan-tim-hieu-middleware-va-redux/#middleware-l%C3%A0-g%C3%AC
+
+
+- pure funtion
+  Pure function luôn trả về kết quả giống nhau khi tham số truyền vào giống nhau. Nó không bị phụ thuộc bởi bất cứ trạng thái, dữ liệu hay thay đổi nào khi chương trình chạy mà chỉ phụ thuộc duy nhất vào tham số truyền vào,  không tạo ra những side effect đến chương trình ví dụ như gửi request, hay thay đổi dữ liệu bên ngoài phạm vi hoạt động của nó.
+  	
+
+- best pratices lam cho css nhanh hon
+  1. Do You Really Need a Framework? Trước hết, quyết định xem bạn có thực sự cần sử dụng khung CSS hay không.
+  2. Prefer Using a CSS Methodology? 
+     BEM : Block, Element, Modifier là phương pháp CSS phổ biến nhất hiện nay. Nó là tập các name conventions bạn có thể tạo ra để sử dụng cũng như tái sử dụng. Các quy tắc đặt tên mẫu :
+     .block { ... }
+     .block__element { ... }
+     .block--modifier { ... }
+  3. ITCSS
+  4. OOCSS
+     Object-oriented CSS, or OOCSS Có hai nguyên tắc chính. Đây là một kỹ thuật gom nhóm nhiều phần tử trên website vào sử dụng chung một đoạn CSS nếu có các tính chất giống nhau. Sau đó ở mỗi phần tử con, chúng ta có thể thêm các style riêng cho nó nếu cần tùy biến lại
+  /* Instead of  */
+  .box {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    border: 1px solid #CCC;
+    box-shadow: 1px 2px 5px #CCC;
+    border-radius: 5px;
+  }
+
+  /* Do */
+  .box {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+  }
+
+  .elevated {
+    border: 1px solid #CCC;
+    box-shadow: 1px 2px 5px #CCC;
+    border-radius: 5px;
+  }
+	
+  5.Separating container and content
+    Điều này có nghĩa là bạn không muốn bất ký element nào phụ thuộc vào vị trí của nó .Các yếu tố giống nhau sẽ trông giống nhau bất kể chúng ở đâu trên trang
+  6 Set Up a Pre-Processor (sass, stylus, less)
+  7 Using post-processors
+     Nó có thể chạy các bước tối ưu hóa bổ sung CSS của bạn được tạo bới bộ tiền xử lý .Một trong nhưng bộ xử lý sau tốt nhất PostCss.
+  8 . Use Shorthand Propertie
+     .heading {
+	margin: 1em 0;
+      }
+  9  Don’t Remove Outlines
+ 10  Use Mobile First Khi bạn phải đối phó với các truy vấn media, luôn luôn sử dụng điện thoại di động trước.
+ 11 Compress Cuối cùng, nén các gói của bạn để giảm kích thước của chúng. Nén loại bỏ các bình luận và khoảng trắng các gói của bạn yêu cầu ít băng thông hơn.
+  tham khao them: https://viblo.asia/p/toi-uu-hoa-css-qm6RWq5zGeJE#_6-han-che-dung-import-6
+
+	
+- Wepback
+- tại sao em học reactjs
+
+- global state
+  Đây là khái niệm mà chúng ta thường được gặp nhiều nhất khi sử dụng Redux, thì nó chỉ sử dụng khi dữ liệu đó được sử dụng ở Nhiều Component khác nhau,	
+	 
+- local state
+   chỉ dùng cho đúng Một Component hiện tại mà thôi, nó được tạo ra, xử lí và quản lí ở trong duy nhất Component đang sử dụng mà thôi.
+
+- Cach chia component
+  - Presentational và Container components được đặt trong folder src/components
+  - Nhóm các components lại dựa trên module/feature
+  - Đưa những component chung được sử dụng nhiều lần (UI components) vào trong src/components/UI	
+  - Viết component screens (màn hình) thật đơn giản, ít code
+  - Nhóm các màn hình lại theo route của ứng dụng. Với route /user/list thì screen sẽ nằm trong src/screens/User/List.jsx.
+  - Components được dặt tên theo đường dẫn tương đối của so với src/components hoặc src - Tên component trong file src/components/User/List.jx sẽ có tên là UserList, tên component trong file src/screens/User/List.jsx sẽ có tên là ScreensUserList.
+  - 
+
+
