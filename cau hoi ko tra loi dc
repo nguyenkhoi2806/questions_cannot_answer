@@ -18,7 +18,7 @@ ES5 khac voi es6 ntn?
   enhanced object literals
   let + const
   modules 
-  promises
+  promisesass
 
 Join() trong javascipt 
 
@@ -156,5 +156,13 @@ MessageMedia
   - Nhóm các màn hình lại theo route của ứng dụng. Với route /user/list thì screen sẽ nằm trong src/screens/User/List.jsx.
   - Components được dặt tên theo đường dẫn tương đối của so với src/components hoặc src - Tên component trong file src/components/User/List.jx sẽ có tên là UserList, tên component trong file src/screens/User/List.jsx sẽ có tên là ScreensUserList.
   - 
+
+PureComponent chính xác giống như Component ngoại trừ việc đó là nó xử lý shouldComponentUpdate cho bạn
+
+
+Pertrol Technology
+Su dung componentWillUnmount nhu the nao trong react hook
+
+
 
 

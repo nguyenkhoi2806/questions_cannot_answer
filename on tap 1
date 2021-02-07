@@ -1,0 +1,122 @@
+es5 khac vs es6 co arrow function, co const let, promise, class, module
+
+supper trong reactjs 
+la khi viet contructor phai co supper, vi khi khau bao supper chung ta se xu dung dc this trong component do , va neu khong khai bao trong contustor thi se bi loi 
+
+vong doi reactjs 
+gom 3 pha chinh, Mounting, updating, Unmounting: 
+trong do mounting: gom cac ham: contructor, render, componentDidmount, 
+
+Updating: gom cac ham : render(), ShouldComponentUpdate, ComponentDiDUpdate, ComponentWillRecieveProps: 
+ComponentDidUpdate se chay khi tat ca cac component Da dc update, 
+ShouldComponentuPdate: se ngan chan lai viec co nen Render lai khi state cap nhat khong thay doi gia tri moi 
+
+UnMounting: la giai doan khi component do bi xoa ra khoi Dom.
+
+usetrict: Khi mot doan code co khai bao usestrict thi tat ca dong code o ben duoi phai dc quan ly 1 cach nghiem ngac ve cun phap 
+vd x = 0;
+console.log(windown.x) = 0;
+
+khai vs usetrict se la undifine 
+
+cac selector trong css: 
+
+Basic CSS Selector ( p { color: blue; } )
+Descendant CSS Selector ( .container .hello-class { color: red;} ), )
+Mitiple selector ( .outside-class, .again-class, .hola-class { color: purple; })
+Combination CSS Selector ( p.active {color: yellow; }),  
+Sibling CSS Selector(X +Y),  
+Pesudo CSS Selector(li:first-child, a:active, p:link), 
+Attribute CSS Selector (vd: div[for], div[for="chocolate"])
+Pesudo-Selector (links và input) (vd: a:link, cheesyLink:active)
+
+
+Liful 
+Khi lap trinh can quan tam dieu gi:
+Cố gắng viết code tốt, đừng viết code màu mè
+Hãy tập suy nghĩ phản biện về lập trình và hình thành ý kiến riêng
+Cố gắng để lập trình đi vào cuộc sống của bạn, nhưng đừng bị ám ảnh.
+Cố gắng tạo nhiều mối quan hệ nhất có thể
+
+Khi tao  cot trong database quan tam dieu gi
+- xem cot do co dong vs record cu hay khong, 
+- khi them phai xac dinh lai ban chat kieu du lieu cua no
+- khi them cot co query nhanh dc hay khong 
+- co mo rong ra duoc hay khong 
+
+
+Quy tac thiet ke database: 
+dat ten theo so it, 
+cang it bang cang tot,
+khong dung khoan trang cho ten bang, 
+su dung index de query
+su dung function khi can thiet,
+
+
+khi up database len server can quan tam dieu gi: 
+Backup lai database hien tai 
+run local truoc sau do up len server, 
+
+
+solid principle: 
+1 single responsiple principle: moi 1 calss chi dam nhiem 1 chuc nang duy nhat
+2 open close: khi co 1 chuc nang moi thi nen mo rorng class, hoa viet 1 class moi ke thua class do khong nen ssua lai class cu 
+3 linkos principle: Cac interface class con co the thay class cha ma kohng gay ra loi 
+4 interface segregration: 1 tinterface lon  nen chia ra nhieu interface nho 
+5 depenci inversion: cac thanh phan trong module phu thuoc vao class abtract khong nen phu thuoc vao ca
+
+
+closure trong javascript: 
+trong function cua javsc, return 1 function khac thi la closure
+
+
+middleware trong reacjs la: 1 mot ham ma khi 1 component goi 1 action truoc khi tra ve store  de update se thong 1 ham moddiware modify sau tra nguoc ve store de update
+thong thuong o day la async wait
+
+
+purefunction la funciton chi phu vao gia tri truyen vao ma thoi. khong phu thuoc bat cu gia tri nao nam ben ngoai funciton do 
+
+PureComponent chính xác giống như Component ngoại trừ việc đó là nó xử lý shouldComponentUpdate cho bạn
+
+global state: la 1 state dc su dung o nhieu component khac nhau 
+local state: la state dc su dung cho 1 component khai bao state do ma thoi 
+
+
+cach chia component: 
+ - Presentational và Container components được đặt trong folder src/components
+  Container: la 1 component su ly cac action
+  Presentational component: la dung de render va ke thua cac state tu container 
+ 
+ - NHom chung cac component co chung chuc nang feature thanh 1 folder vd : user/form/ list.js
+ - Gom cac component dc su dung nhieu noi trong folder UI 
+ - Dat ten component phai viet hoa. 
+ - Viết component screens (màn hình) thật đơn giản, ít code. screen component sẽ không xử lý gì liên quan đến state (data) mà chỉ thực hiện render ra component UserForm.
+
+
+Bespractice css: 
+- Su dung Bem cho cach dat ten. 
+- Viet css theo dang object 
+- su dung framework 
+- detect o dang mobile truoc, 
+- su dung cac Pre-processor (sass, less, ... )
+- viet css 1 cach ngon vd (marign: 0px 12px 10px 0px);
+- Nen file css lai Hay con goi la 
+
+best practice reacjs: 
+Cach Compoentst: Chia theo module featuure, Cach dat ten, Viet man hinh screen ngan gon, gom nhom cac mnodule  su nhieu, 
+
+cach style css trong reactjs: chia theo file: sass, hoac = css moudle, 
+
+MOi compoent se co test cho component do. 
+
+su dung thu vien redux cho nhung truong hop cna thiet
+
+su dung modileware cho redux khi can theit 
+
+Comment khi that su can thiet 
+
+
+
+
+
+
