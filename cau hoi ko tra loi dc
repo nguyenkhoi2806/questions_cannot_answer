@@ -52,7 +52,11 @@ cach xu ly khi server live bi loi
 
 
 Lifful
-Khi lap trinh quan tam dieu gi
+Khi lap trinh quan tam dieu gi? 
+- Xac dinh tinh nang cua feature do la gi ? 
+- Xac dinh cac step de code feature do: - luot so qa, nhung function nao se duoc su dung lai, function nao chua co thi viet ra cai moi.   
+- Neu Feature business do phuc tap thi viet lai document
+- Code: => test => clean lai code dư thì bỏ, xem lại tên biến , function có hợp lý chưa 
 
 Khi tao  cot trong database quan tam dieu gi
  - Xem ban chat cua cột đó
@@ -162,6 +166,14 @@ PureComponent chính xác giống như Component ngoại trừ việc đó là n
 
 Pertrol Technology
 Su dung componentWillUnmount nhu the nao trong react hook
+useEffect(() => {
+  // almost same as componentDidMount
+  console.log('mounted!');
+  return () => {
+    // almost same as componentWillUnmount
+    console.log('unmount!');
+  };
+}, []);
 
 
 
