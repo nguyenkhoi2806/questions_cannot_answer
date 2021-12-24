@@ -33,10 +33,11 @@ Pesudo-Selector (links và input) (vd: a:link, cheesyLink:active)
 
 Liful 
 Khi lap trinh can quan tam dieu gi:
-Cố gắng viết code tốt, đừng viết code màu mè
-Hãy tập suy nghĩ phản biện về lập trình và hình thành ý kiến riêng
-Cố gắng để lập trình đi vào cuộc sống của bạn, nhưng đừng bị ám ảnh.
-Cố gắng tạo nhiều mối quan hệ nhất có thể
+- Xac dinh tinh nang cua feature do la gi ? 
+- Xac dinh cac step de code feature do: - luot so qa, nhung function nao se duoc su dung lai, function nao chua co thi viet ra cai moi.   
+- Neu Feature business do phuc tap thi viet lai document
+- Code: => test => clean lai code dư thì bỏ, xem lại tên biến , function có hợp lý chưa 
+
 
 Khi tao  cot trong database quan tam dieu gi
 - xem cot do co dong vs record cu hay khong, 
