@@ -10,7 +10,7 @@ example:
 var a = 'Hello Hoisting
 `output: Hello Hoisting
 
-- say_something('YOLO');__
+- say_something('YOLO'); 
 function say_something(a){
     console.log(a);
 } 
