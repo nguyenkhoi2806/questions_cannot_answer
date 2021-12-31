@@ -1,11 +1,132 @@
-es5 khac vs es6 co arrow function, co const let, promise, class, module
+## ES5 vs ES6 khac nhau nhu the nao
+es5 khac vs es6 co arrow function, co const let, promises, class, module
 
-supper trong reactjs 
+## Usetrict trong Javascript
+Khi mot doan code co khai bao usestrict thi tat ca dong code o ben duoi phai dc quan ly 1 cach nghiem ngac ve cu phap 
+```
+vd x = 0;
+console.log(windown.x) = 0;
+khai vs usetrict se la undifine 
+```
+
+## Prototype
+Prototype là cơ chế mà các object trong javascript kế thừa các tính năng từ một object khác. Tất cả các object trong javascript đều có một prototype, và các object này kế thừa các thuộc tính (properties) cũng như phương thức (methods) từ prototype của mình.
+
+## Event loop
+- Event Loop là cơ chế giúp Javascript có thể thực hiện nhiều thao tác cùng một lúc
+```
+example:
+const foo = () => {
+  console.log('foo')
+  setTimeout(bar, 0)
+  new Promise((resolve, reject) =>
+    resolve('should be right after baz, before bar')
+  ).then(resolve => console.log(resolve))
+  baz()
+}
+foo();
+```
+
+## Closure
+- closure là một hàm bên trong mà có thể truy cập biến của hàm bên ngoài (chứa nó).có 3 scope chain, đó là: 
+- Có thể truy cập đến biến của chính nó (biến được định nghĩa trong dấu ngoặc nhọn của nó); 
+- Có thể truy cập biến của hàm bên ngoài; 
+- Có thể truy cập biến toàn cục (global).
+```
+example: 
+function showName (firstName, lastName) {
+   var nameIntro = "Your name is ";
+   function makeFullName () {
+        return nameIntro + firstName + " " + lastName;
+   }
+    return makeFullName ();
+}
+showName ("Michael", "Jackson"); //
+```
+
+## PureFunction
+- Luôn trả về kết quả giống nhau khi tham số truyền vào giống nhau. Nó không bị phụ thuộc bởi bất cứ tham số nào ngoài hàm mà chỉ phụ thuộc duy nhất vào tham số truyền vào.
+```
+example: 
+function priceAfterTax(productPrice) {
+ return (productPrice * 0.1) + productPrice;
+}
+```
+
+## yarn vs npm 
+npm 
+- lấy các dependencies từ kho chứa của nó, nó sẽ cài đặt các dependencies từng cái một sau khi một cái khác được cài đặt xong, vì vậy sẽ mất rất nhiều thời gian.
+- Nếu như một package không có trong NpmJS, hãy quên nó đi.
+- Không hỗ trợ cài đặt offline
+yarn
+- Nếu bạn đã cài đặt một package trước đó, Yarn sẽ tạo một bản sao trong bộ nhớ cached để hỗ trợ việc cài đặt offline.
+- Yarn cung cấp một cấu trúc các dependencies bằng phẳng so với cấu trúc lồng nhau của npm.
+
+## Callback
+Callback là một hàm sẽ được thực hiện sau khi một hàm khác đã thực hiện xong - vì thế nó có tên là callback.
+Callback là một cách để đảm bảo code nhất định không thực thi cho đến khi code khác thực hiện xong.
+```
+- example 
+function doHomework(subject, callback) {
+    setTimeout( function(){
+        console.log(`Bắt đầu làm bài tập ${subject}.`);
+        callback();
+    }, 5000);
+}
+function alertFinished(){
+    console.log('Làm bài tập xong!');
+}
+doHomework('Toán', alertFinished);
+```
+
+## Set
+- Set cho phép bạn lưu trữ các giá trị duy nhất thuộc bất kì kiểu nào, cho dù là kiểu giá trị nguyên thuỷ
+```
+- example: 
+  `const myArray = [1, 2, 3, 4, 5, 5, 5, 2];
+   const mySet = new Set(myArray);
+   console.log(mySet);
+    // Set {1, 2, 3, 4, 5};`
+```
+
+## Map
+- Map trong JavaScript là một cấu trúc dữ liệu cho phép lưu trữ dữ liệu theo kiểu key-value, tương tự như object.
+- Tuy nhiên, chúng khác nhau ở chỗ là:
+- Object chỉ cho phép sử dụng String hay Symbol làm key.
+- Map cho phép mọi kiểu dữ liệu (String, Number, Boolean, NaN, Object,...) có thể làm key.
+
+```
+- example: 
+function func4() {
+  const map4 = new Map(arguments);
+  console.log(map4);
+}
+func4(["one", 1], ["two", 2], ["three", 3]);
+// Map(3) {"one" => 1, "two" => 2, "three" => 3}
+```
+
+## Array map 
+đây là hàm dùng để lặp qua các phần tử của mảng và cho phép xử lý giá trị của phần tử đó.
+
+## Array reduce 
+là một phương thức được sử dụng để thực thi một hàm lên các phần tử của mảng (từ trái sang phải) với một biến tích lũy để thu về một giá trị duy nhất. 
+```
+- example: 
+const data = [5, 10, 15, 20, 25];
+const res = data.reduce((total,currentValue) => {
+  return total + currentValue;
+});
+console.log(res); // 75
+```
+
+## ReactJs
+
+## Supper trong reactjs 
 la khi viet contructor phai co supper, vi khi khau bao supper chung ta se xu dung dc this trong component do , va neu khong khai bao trong contustor thi se bi loi 
 
-vong doi reactjs 
+## Vong doi reactjs 
 gom 3 pha chinh, Mounting, updating, Unmounting: 
-trong do mounting: gom cac ham: contructor, render, componentDidmount, 
+trong do mounting: gom cac ham: constructor, render, componentDidmount, 
 
 Updating: gom cac ham : render(), ShouldComponentUpdate, ComponentDiDUpdate, ComponentWillRecieveProps: 
 ComponentDidUpdate se chay khi tat ca cac component Da dc update, 
@@ -13,53 +134,63 @@ ShouldComponentuPdate: se ngan chan lai viec co nen Render lai khi state cap nha
 
 UnMounting: la giai doan khi component do bi xoa ra khoi Dom.
 
-usetrict: Khi mot doan code co khai bao usestrict thi tat ca dong code o ben duoi phai dc quan ly 1 cach nghiem ngac ve cun phap 
-vd x = 0;
-console.log(windown.x) = 0;
+## Middleware trong reacjs
+1 mot ham ma khi 1 component goi 1 action truoc khi tra ve store  de update se thong 1 ham moddiware modify sau tra nguoc ve store de update
+thong thuong o day la async wait
 
-khai vs usetrict se la undifine 
+## PureComponent 
+chính xác giống như Component ngoại trừ việc đó là nó xử lý shouldComponentUpdate cho bạn. Khi su dung Purecomponent se han che duoc hop khi nao can rerender khi nao khong 
+vi du chi render khi props vs state thay doi.
+PureComponent dùng cho các React Class Component, còn React Functional Component thì dùng... memo.
+ 
+## global state
+la 1 state dc su dung o nhieu component khac nhau 
 
-cac selector trong css: 
+## local state: 
+la state dc su dung cho 1 component khai bao state do ma thoi 
 
-Basic CSS Selector ( p { color: blue; } )
-Descendant CSS Selector ( .container .hello-class { color: red;} ), )
-Mitiple selector ( .outside-class, .again-class, .hola-class { color: purple; })
-Combination CSS Selector ( p.active {color: yellow; }),  
-Sibling CSS Selector(X +Y),  
-Pesudo CSS Selector(li:first-child, a:active, p:link), 
-Attribute CSS Selector (vd: div[for], div[for="chocolate"])
-Pesudo-Selector (links và input) (vd: a:link, cheesyLink:active)
+## Su dung componentWillUnmount nhu the nao trong react hook
+useEffect(() => {
+  // almost same as componentDidMount
+  console.log('mounted!');
+  return () => {
+    // almost same as componentWillUnmount
+    console.log('unmount!');
+  };
+}, []);
 
 
-Liful 
-Khi lap trinh can quan tam dieu gi:
+## Css
+
+## Các position
+- static: Đưa phần tử về hiển thị theo kiểu mặc định.
+- fixed: Hiển thị luôn đi theo trình duyệt khi cuộn trang.
+- top:  Căn vị trí hiển thị của phần tử theo hướng từ trên xuống dưới. Giá trị càng cao thì phần tử càng thụt xuống dưới.
+- bottom:  Căn vị trí hiển thị của phần tử theo hướng từ dưới lên trên. Giá trị càng cao thì phần tử càng hiển thị lên cao.
+- left: Căn vị trí hiển thị từ trái sang phải. Giá trị càng cao thì phần tử sẽ càng thụt về bên phải.
+- right: Căn vị trí hiển thị từ phải sang trái. Giá trị càng cao thì phần tử sẽ càng thụ về bên trái.
+- relative: Dùng để thiết lập một phần tử sử dụng các thuộc tính position mà không làm ảnh hưởng đến việc hiển thị ban đầu.
+- absolute: Dùng để thiết lập vị trí của một phần tử nhưng nó sẽ luôn nằm trong một phần tử mẹ đang là relative.
+
+## Flexbox
+Flexbox Layout là một kiểu bố cục trang có khả năng tự cân đối kích thước, chiều rộng/chiều cao và thứ tự phần tử bên trong để phù hợp với tất cả các loại thiết bị màn hình.
+thành phần gồm
+- Container: là thành phần lớn bao quanh các phần tử bên trong, các item bên trong sẽ hiển thị dựa trên thiết lập của container này.
+- item: là phần tử con của container, bạn có thể thiết lập nó sẽ sử dụng bao nhiêu cột trong một container, hoặc thiết lập thứ tự hiển thị của nó.
+
+
+
+
+## Câu hỏi ngoài lề
+
+## Khi lap trinh can quan tam dieu gi:
 - Xac dinh tinh nang cua feature do la gi ? 
 - Xac dinh cac step de code feature do: - luot so qa, nhung function nao se duoc su dung lai, function nao chua co thi viet ra cai moi.   
 - Neu Feature business do phuc tap thi viet lai document
-- Code: => test => clean lai code dư thì bỏ, xem lại tên biến , function có hợp lý chưa 
+- Code: => test => clean lai code dư thì bỏ, xem lại tên biến , function có hợp lý chưa
 
 
-Khi tao  cot trong database quan tam dieu gi
-- xem cot do co dong vs record cu hay khong, 
-- khi them phai xac dinh lai ban chat kieu du lieu cua no
-- khi them cot co query nhanh dc hay khong 
-- co mo rong ra duoc hay khong 
-
-
-Quy tac thiet ke database: 
-dat ten theo so it, 
-cang it bang cang tot,
-khong dung khoan trang cho ten bang, 
-su dung index de query
-su dung function khi can thiet,
-
-
-khi up database len server can quan tam dieu gi: 
-Backup lai database hien tai 
-run local truoc sau do up len server, 
-
-
-solid principle: 
+## Solid principle: 
 1 single responsiple principle: moi 1 calss chi dam nhiem 1 chuc nang duy nhat
 2 open close: khi co 1 chuc nang moi thi nen mo rorng class, hoa viet 1 class moi ke thua class do khong nen ssua lai class cu 
 3 linkos principle: Cac interface class con co the thay class cha ma kohng gay ra loi 
@@ -67,57 +198,31 @@ solid principle:
 5 depenci inversion: cac thanh phan trong module phu thuoc vao class abtract khong nen phu thuoc vao ca
 
 
-closure trong javascript: 
-trong function cua javsc, return 1 function khac thi la closure
+## Design parten
+Nói một cách đơn giản, design pattern là các mẫu thiết kế có sẵn, dung để giải quyết một vấn đề, Áp dụng mẫu thiết kế này sẽ làm code dễ bảo trì, mở rộng hơn, 3 loại chính
+- Creational Pattern tập hợp các giải pháp liên quan đến khởi tạo đối tượng.
+Nhóm này gồm 5 mẫu thông dụng: 
+Factory Method, Abstract Factory, Builder, Prototype, Singleton
+- Structural Pattern tập hợp các giải pháp liên quan đến thiết lập kết cấu, liên hệ giữa các đối tượng.
+Nhóm này gồm 7 mẫu thông dụng: Adapter, Bridge, Composite, Decorator, Facade
+- Behavioral Pattern: tập hợp các giải pháp liên quan đến các hành vi của đối tượng và giao tiếp giữa các đối tượng khác nhau.
+Nhóm này gồm 11 mẫu thông dụng: Strategy, State, Observer
 
 
-middleware trong reacjs la: 1 mot ham ma khi 1 component goi 1 action truoc khi tra ve store  de update se thong 1 ham moddiware modify sau tra nguoc ve store de update
-thong thuong o day la async wait
-
-
-purefunction la funciton chi phu vao gia tri truyen vao ma thoi. khong phu thuoc bat cu gia tri nao nam ben ngoai funciton do 
-
-PureComponent chính xác giống như Component ngoại trừ việc đó là nó xử lý shouldComponentUpdate cho bạn
-
-global state: la 1 state dc su dung o nhieu component khac nhau 
-local state: la state dc su dung cho 1 component khai bao state do ma thoi 
-
-
-cach chia component: 
- - Presentational và Container components được đặt trong folder src/components
-  Container: la 1 component su ly cac action
-  Presentational component: la dung de render va ke thua cac state tu container 
- 
- - NHom chung cac component co chung chuc nang feature thanh 1 folder vd : user/form/ list.js
- - Gom cac component dc su dung nhieu noi trong folder UI 
- - Dat ten component phai viet hoa. 
- - Viết component screens (màn hình) thật đơn giản, ít code. screen component sẽ không xử lý gì liên quan đến state (data) mà chỉ thực hiện render ra component UserForm.
-
-
-Bespractice css: 
-- Su dung Bem cho cach dat ten. 
-- Viet css theo dang object 
-- su dung framework 
-- detect o dang mobile truoc, 
-- su dung cac Pre-processor (sass, less, ... )
-- viet css 1 cach ngon vd (marign: 0px 12px 10px 0px);
-- Nen file css lai Hay con goi la 
-
-best practice reacjs: 
-Cach Compoentst: Chia theo module featuure, Cach dat ten, Viet man hinh screen ngan gon, gom nhom cac mnodule  su nhieu, 
-
-cach style css trong reactjs: chia theo file: sass, hoac = css moudle, 
-
-MOi compoent se co test cho component do. 
-
-su dung thu vien redux cho nhung truong hop cna thiet
-
-su dung modileware cho redux khi can theit 
-
-Comment khi that su can thiet 
-
-
-
+## Cau hoi cho cong ty
+Quy trinh lam viec
+1 Sprint keo dai bao lau 
+2 1 Sprint co bao nhieu ticket cho moi nguoi 
+3 1 Co tong ket srpint hay khong 
+4 Co stand up meeting hay khong 
+5 Khi co 1 van de ve teachnical chua co huong giai queyt thi ben anh xu ly nhu the nao? 
+6 Ben anh co meeting technical moi tuan ko 
+7 Benh anh co code review hay khong
+8 Ben anh Devops hay khong
+9 Ben xu dung autoload deploy hay khong
+10 Co OT hay khong va OT nhieu hay it
+11 ben a code co theo cau truc nao hk
+12 Ben a co app dung TDD cho project khong. 
 
 
 
