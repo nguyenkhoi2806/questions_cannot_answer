@@ -150,6 +150,7 @@ la 1 state dc su dung o nhieu component khac nhau
 la state dc su dung cho 1 component khai bao state do ma thoi 
 
 ## Su dung componentWillUnmount nhu the nao trong react hook
+```
 useEffect(() => {
   // almost same as componentDidMount
   console.log('mounted!');
@@ -158,7 +159,7 @@ useEffect(() => {
     console.log('unmount!');
   };
 }, []);
-
+```
 
 ## Css
 
