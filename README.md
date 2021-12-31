@@ -1,5 +1,30 @@
+## Javascript
 ## ES5 vs ES6 khac nhau nhu the nao
 - es5 khac vs es6 co arrow function, co const let, promises, class, module
+
+## Hoisting javascript?
+Hoisting là hành vi mặc định của JavaScript về việc di chuyển các khai báo lên đầu để compiled hay thực thi code của
+```
+example: 
+- console.log(a);
+var a = 'Hello Hoisting
+`output: Hello Hoisting
+
+- say_something('YOLO');__
+function say_something(a){
+    console.log(a);
+} 
+`output: YOLO`
+
+- do_something();
+function do_something(){
+    console.log(a);
+    var a = 'fly';
+}
+`output: undefined`
+```
+
+
 
 ## Usetrict trong Javascript
 - Khi mot doan code co khai bao usestrict thi tat ca dong code o ben duoi phai dc quan ly 1 cach nghiem ngac ve cu phap 
