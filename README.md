@@ -10,7 +10,7 @@ khai vs usetrict se la undifine
 ```
 
 ## Prototype
-- Prototype là cơ chế mà các object trong javascript kế thừa các tính năng từ một object khác. Tất cả các object trong javascript đều có một prototype, và các object này kế thừa các thuộc tính (properties) cũng như phương thức (methods) từ prototype của mình.
+- Prototype là cơ chế mà các object trong javascript kế thừa các tính năng từ một object khác.
 
 ## Event loop
 - Event Loop là cơ chế giúp Javascript có thể thực hiện nhiều thao tác cùng một lúc
