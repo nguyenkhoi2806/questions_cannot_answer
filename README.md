@@ -3,7 +3,7 @@
 - es5 khac vs es6 co arrow function, co const let, promises, class, module
 
 ## Hoisting javascript?
-Hoisting là hành vi mặc định của JavaScript về việc di chuyển các khai báo lên đầu để compiled hay thực thi code của
+Hoisting là hành động mặc định của Javascript, về việc di chuyển phần khai báo lên phía trên top 
 ```
 example: 
 - console.log(a);
@@ -15,7 +15,6 @@ function say_something(a){
     console.log(a);
 } 
 `output: YOLO`
-
 - do_something();
 function do_something(){
     console.log(a);
