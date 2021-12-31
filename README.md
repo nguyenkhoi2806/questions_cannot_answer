@@ -190,11 +190,11 @@ thành phần gồm
 
 
 ## Solid principle: 
-- 1 single responsiple principle: moi 1 calss chi dam nhiem 1 chuc nang duy nhat
-- 2 open close: khi co 1 chuc nang moi thi nen mo rorng class, hoa viet 1 class moi ke thua class do khong nen ssua lai class cu 
-- 3 linkos principle: Cac interface class con co the thay class cha ma kohng gay ra loi 
-- 4 interface segregration: 1 tinterface lon  nen chia ra nhieu interface nho 
-- 5 depenci inversion: cac thanh phan trong module phu thuoc vao class abtract khong nen phu thuoc vao ca
+- single responsiple principle: moi 1 calss chi dam nhiem 1 chuc nang duy nhat
+- open close: khi co 1 chuc nang moi thi nen mo rorng class, hoa viet 1 class moi ke thua class do khong nen ssua lai class cu 
+- linkos principle: Cac interface class con co the thay class cha ma kohng gay ra loi 
+- interface segregration: 1 tinterface lon  nen chia ra nhieu interface nho 
+- depenci inversion: cac thanh phan trong module phu thuoc vao class abtract khong nen phu thuoc vao ca
 
 
 ## Design parten
@@ -210,18 +210,18 @@ Nhóm này gồm 11 mẫu thông dụng: Strategy, State, Observer
 
 ## Cau hoi cho cong ty
 Quy trinh lam viec
-- 1 Sprint keo dai bao lau 
-- 2 1 Sprint co bao nhieu ticket cho moi nguoi 
-- 3 1 Co tong ket srpint hay khong 
-- 4 Co stand up meeting hay khong 
-- 5 Khi co 1 van de ve teachnical chua co huong giai queyt thi ben anh xu ly nhu the nao? 
-- 6 Ben anh co meeting technical moi tuan ko 
-- 7 Benh anh co code review hay khong
-- 8 Ben anh Devops hay khong
-- 9 Ben xu dung autoload deploy hay khong
-- 10 Co OT hay khong va OT nhieu hay it
-- 11 ben a code co theo cau truc nao hk
-- 12 Ben a co app dung TDD cho project khong. 
+- Sprint keo dai bao lau 
+- 1 Sprint co bao nhieu ticket cho moi nguoi 
+- 1 Co tong ket srpint hay khong 
+- Co stand up meeting hay khong 
+- Khi co 1 van de ve teachnical chua co huong giai queyt thi ben anh xu ly nhu the nao? 
+- Ben anh co meeting technical moi tuan ko 
+- Benh anh co code review hay khong
+- Ben anh Devops hay khong
+- Ben xu dung autoload deploy hay khong
+- Co OT hay khong va OT nhieu hay it
+- ben a code co theo cau truc nao hk
+- Ben a co app dung TDD cho project khong. 
 
 
 
