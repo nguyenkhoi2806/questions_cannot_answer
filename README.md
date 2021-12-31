@@ -12,6 +12,26 @@ khai vs usetrict se la undifine
 ## Prototype
 - Prototype là cơ chế mà các object trong javascript kế thừa các tính năng từ một object khác.
 
+```
+- example: 
+// Tạo một hàm constructor function rỗng 
+function Person(){
+}
+
+// Thêm thuộc tính name, age cho prototype property của hàm Person constructor 
+Person.prototype.name = "Kien" ;
+Person.prototype.age = 24;
+Person.prototype.sayName = function(){
+	console.log(this.name);
+}
+
+// Khởi tạo object sử dụng hàm khởi tạo của Person
+var person1 = new Person();
+
+// Truy cập tới thuộc tính name sử dụng đối tượng person
+console.log(person1.name) // Output" Kien
+```
+
 ## Event loop
 - Event Loop là cơ chế giúp Javascript có thể thực hiện nhiều thao tác cùng một lúc
 ```
