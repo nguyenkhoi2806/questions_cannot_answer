@@ -1,8 +1,8 @@
 ## ES5 vs ES6 khac nhau nhu the nao
-es5 khac vs es6 co arrow function, co const let, promises, class, module
+- es5 khac vs es6 co arrow function, co const let, promises, class, module
 
 ## Usetrict trong Javascript
-Khi mot doan code co khai bao usestrict thi tat ca dong code o ben duoi phai dc quan ly 1 cach nghiem ngac ve cu phap 
+- Khi mot doan code co khai bao usestrict thi tat ca dong code o ben duoi phai dc quan ly 1 cach nghiem ngac ve cu phap 
 ```
 vd x = 0;
 console.log(windown.x) = 0;
@@ -10,7 +10,7 @@ khai vs usetrict se la undifine
 ```
 
 ## Prototype
-Prototype là cơ chế mà các object trong javascript kế thừa các tính năng từ một object khác. Tất cả các object trong javascript đều có một prototype, và các object này kế thừa các thuộc tính (properties) cũng như phương thức (methods) từ prototype của mình.
+- Prototype là cơ chế mà các object trong javascript kế thừa các tính năng từ một object khác. Tất cả các object trong javascript đều có một prototype, và các object này kế thừa các thuộc tính (properties) cũng như phương thức (methods) từ prototype của mình.
 
 ## Event loop
 - Event Loop là cơ chế giúp Javascript có thể thực hiện nhiều thao tác cùng một lúc
@@ -126,13 +126,13 @@ la khi viet contructor phai co supper, vi khi khau bao supper chung ta se xu dun
 
 ## Vong doi reactjs 
 gom 3 pha chinh, Mounting, updating, Unmounting: 
-trong do mounting: gom cac ham: constructor, render, componentDidmount, 
+- Mounting: gom cac ham: constructor, render, componentDidmount, 
 
-Updating: gom cac ham : render(), ShouldComponentUpdate, ComponentDiDUpdate, ComponentWillRecieveProps: 
-ComponentDidUpdate se chay khi tat ca cac component Da dc update, 
-ShouldComponentuPdate: se ngan chan lai viec co nen Render lai khi state cap nhat khong thay doi gia tri moi 
+- Updating: gom cac ham : render(), ShouldComponentUpdate, ComponentDiDUpdate, ComponentWillRecieveProps: 
+- ComponentDidUpdate se chay khi tat ca cac component Da dc update, 
+- ShouldComponentuPdate: se ngan chan lai viec co nen Render lai khi state cap nhat khong thay doi gia tri moi 
 
-UnMounting: la giai doan khi component do bi xoa ra khoi Dom.
+- UnMounting: la giai doan khi component do bi xoa ra khoi Dom.
 
 ## Middleware trong reacjs
 1 mot ham ma khi 1 component goi 1 action truoc khi tra ve store  de update se thong 1 ham moddiware modify sau tra nguoc ve store de update
@@ -182,7 +182,6 @@ thành phần gồm
 
 
 ## Câu hỏi ngoài lề
-
 ## Khi lap trinh can quan tam dieu gi:
 - Xac dinh tinh nang cua feature do la gi ? 
 - Xac dinh cac step de code feature do: - luot so qa, nhung function nao se duoc su dung lai, function nao chua co thi viet ra cai moi.   
@@ -191,11 +190,11 @@ thành phần gồm
 
 
 ## Solid principle: 
-1 single responsiple principle: moi 1 calss chi dam nhiem 1 chuc nang duy nhat
-2 open close: khi co 1 chuc nang moi thi nen mo rorng class, hoa viet 1 class moi ke thua class do khong nen ssua lai class cu 
-3 linkos principle: Cac interface class con co the thay class cha ma kohng gay ra loi 
-4 interface segregration: 1 tinterface lon  nen chia ra nhieu interface nho 
-5 depenci inversion: cac thanh phan trong module phu thuoc vao class abtract khong nen phu thuoc vao ca
+- 1 single responsiple principle: moi 1 calss chi dam nhiem 1 chuc nang duy nhat
+- 2 open close: khi co 1 chuc nang moi thi nen mo rorng class, hoa viet 1 class moi ke thua class do khong nen ssua lai class cu 
+- 3 linkos principle: Cac interface class con co the thay class cha ma kohng gay ra loi 
+- 4 interface segregration: 1 tinterface lon  nen chia ra nhieu interface nho 
+- 5 depenci inversion: cac thanh phan trong module phu thuoc vao class abtract khong nen phu thuoc vao ca
 
 
 ## Design parten
@@ -211,18 +210,18 @@ Nhóm này gồm 11 mẫu thông dụng: Strategy, State, Observer
 
 ## Cau hoi cho cong ty
 Quy trinh lam viec
-1 Sprint keo dai bao lau 
-2 1 Sprint co bao nhieu ticket cho moi nguoi 
-3 1 Co tong ket srpint hay khong 
-4 Co stand up meeting hay khong 
-5 Khi co 1 van de ve teachnical chua co huong giai queyt thi ben anh xu ly nhu the nao? 
-6 Ben anh co meeting technical moi tuan ko 
-7 Benh anh co code review hay khong
-8 Ben anh Devops hay khong
-9 Ben xu dung autoload deploy hay khong
-10 Co OT hay khong va OT nhieu hay it
-11 ben a code co theo cau truc nao hk
-12 Ben a co app dung TDD cho project khong. 
+- 1 Sprint keo dai bao lau 
+- 2 1 Sprint co bao nhieu ticket cho moi nguoi 
+- 3 1 Co tong ket srpint hay khong 
+- 4 Co stand up meeting hay khong 
+- 5 Khi co 1 van de ve teachnical chua co huong giai queyt thi ben anh xu ly nhu the nao? 
+- 6 Ben anh co meeting technical moi tuan ko 
+- 7 Benh anh co code review hay khong
+- 8 Ben anh Devops hay khong
+- 9 Ben xu dung autoload deploy hay khong
+- 10 Co OT hay khong va OT nhieu hay it
+- 11 ben a code co theo cau truc nao hk
+- 12 Ben a co app dung TDD cho project khong. 
 
 
 
