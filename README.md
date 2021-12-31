@@ -23,8 +23,6 @@ function do_something(){
 `output: undefined`
 ```
 
-
-
 ## Usetrict trong Javascript
 - Khi mot doan code co khai bao usestrict thi tat ca dong code o ben duoi phai dc quan ly 1 cach nghiem ngac ve cu phap 
 ```
@@ -223,8 +221,6 @@ Flexbox Layout là một kiểu bố cục trang có khả năng tự cân đố
 thành phần gồm
 - Container: là thành phần lớn bao quanh các phần tử bên trong, các item bên trong sẽ hiển thị dựa trên thiết lập của container này.
 - item: là phần tử con của container, bạn có thể thiết lập nó sẽ sử dụng bao nhiêu cột trong một container, hoặc thiết lập thứ tự hiển thị của nó.
-
-
 
 
 ## Câu hỏi ngoài lề
