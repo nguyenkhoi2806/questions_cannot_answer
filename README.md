@@ -18,8 +18,7 @@ This trong javscript để đại diện cho một đối tượng (Object).
 - es5 khac vs es6 co arrow function, co const let, promises, class, module
 
 ## Hoisting javascript?
-Hoisting là khái niệm chỉ việc mọi khai báo biến (áp dụng đối var) sẽ được chuyển lên trên cùng của hàm.
-Nghĩa là dù khai báo ở đâu thì biến đều sẽ được đem lên đầu scope trước khi code được thực hiện
+ hoisting là cơ chế của JavaScript cho phép các khai báo biến hoặc hàm được dời lên trên đầu phạm vi của chúng trước khi thực thi đoạn code.
 ```
 example: 
 - var x;
