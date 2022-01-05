@@ -1,13 +1,25 @@
 ## Javascript
+
+## Javarcript la ngon ngu gi 
+JavaScript mà hiện giờ có thể được coi là một ngôn ngữ lai, vừa là thông dịch vừa là biên dịch.
+JavaScript có thể chạy, thực hiện các cậu lệnh từng dòng một trên trình duyệt mà không cần phải compiled.
+
+ biên dịch => V8 Engine  chuyển code JavaScript thành mã thay vì dùng interpreter.  Engine compile những dòng code trong lúc thực thi bằng việc thực hiện thông qua một JIT compiler
+
+
+## This trong javscript 
+This trong javscript để đại diện cho một đối tượng (Object).
+
 ## ES5 vs ES6 khac nhau nhu the nao
 - es5 khac vs es6 co arrow function, co const let, promises, class, module
 
 ## Hoisting javascript?
-Hoisting là hành động mặc định của Javascript, về việc di chuyển phần khai báo lên phía trên top 
+Hoisting là khái niệm chỉ việc mọi khai báo biến (với từ khóa var) sẽ được chuyển lên trên cùng của hàm.
 ```
 example: 
-- console.log(a);
-var a = 'Hello Hoisting
+- var x;
+  console.log(x);
+  x = "abc";
 `output: Hello Hoisting
 
 - say_something('YOLO'); 
