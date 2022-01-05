@@ -220,6 +220,22 @@ useEffect(() => {
 }, []);
 ```
 
+## Cach de optomize Fe nhanh hơn
+- Han che render nhung html ko can thiet vi du br space 
+- Nen su dung before after de thay the. 
+- css nen viet ngan gon 
+```
+vi du: 
+padding-top: 10px;
+padding: 10 0 0 10px; 
+```
+- Nen load nhung data nao that su can thiet cho page. 
+- Nen chia cac file css thanh nhieu file thay vi gom chung lai 1 file. 
+- Han che plugin lib khong can thiet 
+- xu thu vien nhu webpack gulp de nen file css lai 
+- Khong dc style inline trong html 
+
+
 ## Css
 
 ## Các position
