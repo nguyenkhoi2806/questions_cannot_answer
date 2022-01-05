@@ -20,7 +20,7 @@ example:
 - var x;
   console.log(x);
   x = "abc";
-`output: Hello Hoisting
+`output: abc
 
 - say_something('YOLO'); 
 function say_something(a){
