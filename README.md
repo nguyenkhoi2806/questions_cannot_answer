@@ -4,17 +4,22 @@
 JavaScript mà hiện giờ có thể được coi là một ngôn ngữ lai, vừa là thông dịch vừa là biên dịch.
 JavaScript có thể chạy, thực hiện các cậu lệnh từng dòng một trên trình duyệt mà không cần phải compiled.
 
- biên dịch => V8 Engine  chuyển code JavaScript thành mã thay vì dùng interpreter.  Engine compile những dòng code trong lúc thực thi bằng việc thực hiện thông qua một JIT compiler
-
+biên dịch => V8 Engine  chuyển code JavaScript thành mã thay vì dùng interpreter.  Engine compile những dòng code trong lúc thực thi bằng việc thực hiện thông qua một JIT compiler
 
 ## This trong javscript 
 This trong javscript để đại diện cho một đối tượng (Object).
+
+## Khac nhau của var, let, const
+- var sẽ có scope là globally scoped, và áp dụng được hoisting. 
+- let có thể thay thế var để xử lý vấn đề nêu trên là vì biến let được khai báo sẽ có scope là block scoped chứ không phải globally hay locally scoped.
+- Tương tự với let cũng có scope là block scoped, và hoisting thì chúng ta có thêm 1 kiểu khai báo biến nữa là const 
 
 ## ES5 vs ES6 khac nhau nhu the nao
 - es5 khac vs es6 co arrow function, co const let, promises, class, module
 
 ## Hoisting javascript?
-Hoisting là khái niệm chỉ việc mọi khai báo biến (với từ khóa var) sẽ được chuyển lên trên cùng của hàm.
+Hoisting là khái niệm chỉ việc mọi khai báo biến (áp dụng đối var) sẽ được chuyển lên trên cùng của hàm.
+Nghĩa là dù khai báo ở đâu thì biến đều sẽ được đem lên đầu scope trước khi code được thực hiện
 ```
 example: 
 - var x;
