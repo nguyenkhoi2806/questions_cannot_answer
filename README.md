@@ -1,7 +1,7 @@
 ## Javascript
 
 ## Các loại dữ liệu tích hợp sẵn trong Javascript?
--string
+- string
 - number
 - boolean
 - null và undefined
