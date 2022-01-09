@@ -210,7 +210,7 @@ há giống với localStorage. Ngoại trừ sessionStorage sẽ mất đi khi 
 - Cookie có option để chúng ta set ngày quá hạn cho nó. Nghĩa là có thể định nghĩa khi nào nó tự động xoá được. 
 
 ## Các mã status trong http: 
-#1xx (100 – 199): 
+# 1xx (100 – 199): 
 - Yêu cầu đã được chấp nhận và quá trình xử lý yêu cầu của bạn đang được tiếp tục.
 
 # 2xx (200 – 299): 
