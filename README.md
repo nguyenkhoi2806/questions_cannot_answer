@@ -4,7 +4,7 @@
 JavaScript mà hiện giờ có thể được coi là một ngôn ngữ lai, vừa là thông dịch vừa là biên dịch.
 JavaScript có thể chạy, thực hiện các cậu lệnh từng dòng một trên trình duyệt mà không cần phải compiled.
 
-biên dịch => V8 Engine  chuyển code JavaScript thành mã thay vì dùng interpreter.  Engine compile những dòng code trong lúc thực thi bằng việc thực hiện thông qua một JIT compiler
+biên dịch => V8 Engine  chuyển code JavaScript thành mã thay vì dùng interpreter.  Engine compile những dòng code trong lúc thực thi bằng việc thực hiện thông qua một JIT compiler (Just in Time Compilation)
 
 ## This trong javscript 
 This trong javscript để đại diện cho một đối tượng (Object).
