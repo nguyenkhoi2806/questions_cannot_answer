@@ -88,7 +88,7 @@ console.log(person1.name) // Output" Kien
 ```
 
 ## Event loop
-- Event Loop là cơ chế giúp Javascript có thể thực hiện nhiều thao tác cùng một lúc (concurrent model)
+- là một Queue, tất cả cá event được push vào Queue này, mỗi khi một sự kiện được phát ra nó sẽ được push vào Queue. Trong Queue này, thứ tự thực hiện là vào trước thì sẽ được xử lí trước, vào sau thì được xử lí sau.
 ```
 example:
 const foo = () => {
