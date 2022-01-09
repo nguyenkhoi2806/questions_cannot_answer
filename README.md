@@ -89,18 +89,6 @@ console.log(person1.name) // Output" Kien
 
 ## Event loop
 - là một Queue, tất cả cá event được push vào Queue này, mỗi khi một sự kiện được phát ra nó sẽ được push vào Queue. Trong Queue này, thứ tự thực hiện là vào trước thì sẽ được xử lí trước, vào sau thì được xử lí sau.
-```
-example:
-const foo = () => {
-  console.log('foo')
-  setTimeout(bar, 0)
-  new Promise((resolve, reject) =>
-    resolve('should be right after baz, before bar')
-  ).then(resolve => console.log(resolve))
-  baz()
-}
-foo();
-```
 
 ## Closure
 - closure là một hàm bên trong mà có thể truy cập biến của hàm bên ngoài (chứa nó).có 3 scope chain, đó là: 
