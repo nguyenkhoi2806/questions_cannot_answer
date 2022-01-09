@@ -1,5 +1,9 @@
 ## Javascript
 
+## Equality trong JavaScript?
+- Strict comparison (ví dụ: ===) kiểm tra giá trị bằng nhau mà không tự động ép kiểu.
+- Abstract comparison (ví dụ: ==) kiểm tra giá trị bằng nhau có tự động ép kiểu.
+
 ## Các loại dữ liệu tích hợp sẵn trong Javascript?
 - string
 - number
