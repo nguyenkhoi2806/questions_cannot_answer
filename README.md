@@ -158,7 +158,7 @@ doHomework('Toán', alertFinished);
 ```
 
 ## Set
-- Set cho phép bạn lưu trữ các giá trị duy nhất thuộc bất kì kiểu nào, cho dù là kiểu giá trị nguyên thuỷ
+- Set trong JavaScript là một loại object dùng để lưu trữ dữ liệu mà không trùng lặp.
 ```
 - example: 
   `const myArray = [1, 2, 3, 4, 5, 5, 5, 2];
