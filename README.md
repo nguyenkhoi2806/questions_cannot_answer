@@ -1,5 +1,10 @@
 ## Javascript
 
+## Scope
+Global scope: có phạm vị hoạt động ở bất kỳ trong mã javascript của bạn.
+Function scope: có phạm vi hoạt động trong function mà bạn khai báo biến đó.
+Block scope: có phạm vị trong cặp dấu {} mà bạn khai báo biến đó. (ES6)
+
 ## Javarcript la ngon ngu gi 
 JavaScript mà hiện giờ có thể được coi là một ngôn ngữ lai, vừa là thông dịch vừa là biên dịch.
 JavaScript có thể chạy, thực hiện các cậu lệnh từng dòng một trên trình duyệt mà không cần phải compiled.
