@@ -196,14 +196,34 @@ console.log(res); // 75
 ```
 
 ## Khác nhau localStorage vs sessionStorage vs Cookie
-- localStorage giống như một database của browser sẽ được lưu trử những thông tin của người dùng browser. Thông tin này được lưu trữ vĩnh viễn tới khi bạn xóa nó đi 
+#localStorage 
+giống như một database của browser sẽ được lưu trử những thông tin của người dùng browser. Thông tin này được lưu trữ vĩnh viễn tới khi bạn xóa nó đi 
 Vd: theme, danh mục sản phẩm được chọn, giao diện tuỳ chỉnh, dashboard, layout ...
-- sessionStorage khá giống với localStorage. Ngoại trừ sessionStorage sẽ mất đi khi chúng ta đóng tab, đóng trình duyệt.
+
+#sessionStorage k
+há giống với localStorage. Ngoại trừ sessionStorage sẽ mất đi khi chúng ta đóng tab, đóng trình duyệt.
 - 1 Khuyết điểm của session Storage vs Local Storage là có thể bị đọc bởi Javascript. Do đó dễ bị đánh cắp thông tin. Vì vậy, chúng ta không nên lưu trữ những thông tin nhạy cảm như token ID, password, username, email của người dùng vào localStorage hay sessionStorage.
-- Cookie là một bản ghi đơn giản gồm key, value và được gửi kèm theo request của browser cho nên bạn có thể truy cập và xử lý cookie ở server side dựa vào cookie được gắn kèm với request, giới hạn về dung lượng lưu trữ khoảng 4KB
+
+#Cookie là một bản ghi đơn giản gồm key, value và được gửi kèm theo request của browser cho nên bạn có thể truy cập và xử lý cookie ở server side dựa vào cookie được gắn kèm với request, giới hạn về dung lượng lưu trữ khoảng 4KB
 - Khi đóng một tab, Cookie vẫn còn được lưu trên trình duyệt.
 - Cookie có thể mất đi sau khi đóng trình duyệt nếu nó được set expires là N/A
 - Cookie có option để chúng ta set ngày quá hạn cho nó. Nghĩa là có thể định nghĩa khi nào nó tự động xoá được. 
+
+## Các mã status trong http: 
+#1xx (100 – 199): 
+- Yêu cầu đã được chấp nhận và quá trình xử lý yêu cầu của bạn đang được tiếp tục.
+
+# 2xx (200 – 299): 
+- Yêu cầu của bạn đã được máy chủ tiếp nhận, hiểu và xử lý thành công.
+
+# 3xx (300 – 399): 
+- Phía client cần thực hiện hành động bổ sung để hoàn tất yêu cầu.
+
+# 4xx (400 – 499): 
+- Lỗi phía client – Yêu cầu không thể hoàn tất hoặc yêu cầu chứa cú pháp không chính xác. 4xx sẽ hiện ra khi có lỗi từ phía client do không đưa ra yêu cầu hợp lệ.
+
+# 5xx (500 – 599): 
+- Server errors / Lỗi phía máy chủ – Máy chủ không thể hoàn thành yêu cầu được cho là hợp lệ. Khi 5xx xảy ra, bạn chỉ có thể đợi để bên hệ thống máy chủ xử lý xong.
 
 
 ## ReactJs
