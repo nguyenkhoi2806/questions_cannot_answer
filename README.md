@@ -10,17 +10,17 @@ biên dịch => V8 Engine  chuyển code JavaScript thành mã thay vì dùng in
 This trong javscript để đại diện cho một đối tượng (Object).
 
 ## Khac nhau của var, let, const
-- var 
+# var 
 - Phạm vi hàm (function scope) hoặc phạm vi toàn cục (global scope)
 - Có thể gán lại (Re-assignable) và có thể khai báo lại (Re-declarable)
 - Không thuộc vùng chết tạm thời (Temporal Dead Zone - TDZ)
 
-- let 
+# let 
 - Phạm vi khối (Block scope)
 - Có thể gán lại nhưng không thể khai báo lại
 - Phụ thuộc vào vùng chết tạm thời (TDZ) 
 
-- const
+# const
 - Phạm vi khối
 - Không thể gán lại cũng không thể khai báo lại
 - Phụ thuộc vào vùng chết tạm thời
