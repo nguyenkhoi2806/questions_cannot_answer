@@ -10,22 +10,30 @@ biên dịch => V8 Engine  chuyển code JavaScript thành mã thay vì dùng in
 This trong javscript để đại diện cho một đối tượng (Object).
 
 ## Khac nhau của var, let, const
-- var sẽ có scope là globally scoped, và áp dụng được hoisting. 
-- let có thể thay thế var để xử lý vấn đề nêu trên là vì biến let được khai báo sẽ có scope là block scoped chứ không phải globally hay locally scoped.
-- const tương tự với let cũng có scope là block scoped,và không thay đổi dc giá trị. Nhưng với Object thì có.
+- var 
+- Phạm vi hàm (function scope) hoặc phạm vi toàn cục (global scope)
+- Có thể gán lại (Re-assignable) và có thể khai báo lại (Re-declarable)
+- Không thuộc vùng chết tạm thời (Temporal Dead Zone - TDZ)
+
+- let 
+- Phạm vi khối (Block scope)
+- Có thể gán lại nhưng không thể khai báo lại
+- Phụ thuộc vào vùng chết tạm thời (TDZ) 
+
+- const
+- Phạm vi khối
+- Không thể gán lại cũng không thể khai báo lại
+- Phụ thuộc vào vùng chết tạm thời
+
 
 ## ES5 vs ES6 khac nhau nhu the nao
 - es5 khac vs es6 co arrow function, co const let, promises, class, module
 
 ## Hoisting javascript?
  hoisting là cơ chế của JavaScript cho phép các khai báo biến hoặc hàm được dời lên trên đầu phạm vi của chúng trước khi thực thi đoạn code.
+ 
 ```
 example: 
-- var x;
-  console.log(x);
-  x = "abc";
-`output: abc
-
 - console.log(hoist);
  var hoist = 500; output undefined
  => after hoiting 
@@ -39,6 +47,7 @@ function say_something(a){
     console.log(a);
 } 
 `output: YOLO`
+
 - do_something();
 function do_something(){
     console.log(a);
