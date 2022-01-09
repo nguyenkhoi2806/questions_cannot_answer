@@ -1,9 +1,17 @@
 ## Javascript
 
+## Các loại dữ liệu tích hợp sẵn trong Javascript?
+-string
+- number
+- boolean
+- null và undefined
+- object
+- symbol (từ ES6)
+
 ## Scope
-Global scope: có phạm vị hoạt động ở bất kỳ trong mã javascript của bạn.
-Function scope: có phạm vi hoạt động trong function mà bạn khai báo biến đó.
-Block scope: có phạm vị trong cặp dấu {} mà bạn khai báo biến đó. (ES6)
+- Global scope: có phạm vị hoạt động ở bất kỳ trong mã javascript của bạn.
+- Function scope: có phạm vi hoạt động trong function mà bạn khai báo biến đó.
+- Block scope: có phạm vị trong cặp dấu {} mà bạn khai báo biến đó. (ES6)
 
 ## Javarcript la ngon ngu gi 
 JavaScript mà hiện giờ có thể được coi là một ngôn ngữ lai, vừa là thông dịch vừa là biên dịch.
@@ -96,10 +104,7 @@ console.log(person1.name) // Output" Kien
 - là một Queue, tất cả cá event được push vào Queue này, mỗi khi một sự kiện được phát ra nó sẽ được push vào Queue. Trong Queue này, thứ tự thực hiện là vào trước thì sẽ được xử lí trước, vào sau thì được xử lí sau.
 
 ## Closure
-- closure là một hàm bên trong mà có thể truy cập biến của hàm bên ngoài (chứa nó).có 3 scope chain, đó là: 
-- Có thể truy cập đến biến của chính nó (biến được định nghĩa trong dấu ngoặc nhọn của nó); 
-- Có thể truy cập biến của hàm bên ngoài; 
-- Có thể truy cập biến toàn cục (global).
+- Trong javascript, closure là một hàm tham chiếu các biến có phạm vi ngoài phạm vi của hàm đó. Nó cho phép bạn truy cập các biến hoặc tham số có phạm vị ngoài phạm vị hàm đó. Để sử dụng closure, đơn giản là bạn khai báo một function bên trong một function khác và return nó ra.
 ```
 example: 
 function showName (firstName, lastName) {
