@@ -12,7 +12,7 @@ This trong javscript để đại diện cho một đối tượng (Object).
 ## Khac nhau của var, let, const
 - var sẽ có scope là globally scoped, và áp dụng được hoisting. 
 - let có thể thay thế var để xử lý vấn đề nêu trên là vì biến let được khai báo sẽ có scope là block scoped chứ không phải globally hay locally scoped.
-- Tương tự với let cũng có scope là block scoped, và hoisting thì chúng ta có thêm 1 kiểu khai báo biến nữa là const 
+- const tương tự với let cũng có scope là block scoped,và không thay đổi dc giá trị. Nhưng với Object thì có.
 
 ## ES5 vs ES6 khac nhau nhu the nao
 - es5 khac vs es6 co arrow function, co const let, promises, class, module
@@ -25,6 +25,14 @@ example:
   console.log(x);
   x = "abc";
 `output: abc
+
+- console.log(hoist);
+ var hoist = 500; output undefined
+ => after hoiting 
+ var hoist 
+  console.log(hoist);
+ var hoist = 500; 
+
 
 - say_something('YOLO'); 
 function say_something(a){
