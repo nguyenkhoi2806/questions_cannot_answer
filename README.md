@@ -4,9 +4,8 @@
 là function chấp nhận đầu vào và/hoặc đầu ra là một function được gọi là higher order function.
 
 ``
-const largeThan5 = (number) => number > 5;
-const numbers = [1,3,5,7,9,11];
-console.log(numbers.filter(largeThan5));
+const plus2 = (number) => number + 2
+console.log(plus2(3)) // 5
 ``
 
 
