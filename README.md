@@ -1,5 +1,14 @@
 ## Javascript
 
+## High order function 
+là function chấp nhận đầu vào và/hoặc đầu ra là một function được gọi là higher order function.
+``
+const largeThan5 = (number) => number > 5
+const numbers = [1,3,5,7,9,11]
+console.log(numbers.filter(largeThan5))
+``
+
+
 ## Equality trong JavaScript?
 - Strict comparison (ví dụ: ===) kiểm tra giá trị bằng nhau mà không tự động ép kiểu.
 - Abstract comparison (ví dụ: ==) kiểm tra giá trị bằng nhau có tự động ép kiểu.
@@ -270,6 +279,21 @@ useEffect(() => {
   };
 }, []);
 ```
+
+##  React hoạt động như thế nào?
+- React tạo ra một DOM ảo.
+- Khi trạng thái thay đổi trong một component, trước tiên nó chạy một thuật toán "khác biệt (diffing)", xác định những gì đã thay đổi trong DOM ảo.
+- Bước thứ hai là điều chỉnh (reconciliation), nơi nó cập nhật DOM với kết quả của khác biệt.
+
+## Higher-Order component (HOC)
+- là một hàm nhận một component và trả về một component mới
+
+## Refs la gì 
+- Refs thường được dùng để trả về một tham chiếu tới 1 phần tử. Refs cho phép bạn truy cập trực tiếp vào phần tử DOM hoặc một phiên bản của thành phần.
+
+
+## Redux-Thunk 
+- là một middleware phổ biến nhất được dùng để xử lý các action bất đồng bộ trong Redux
 
 ## Cach de optomize Fe nhanh hơn
 - Han che render nhung html ko can thiet vi du br space 
