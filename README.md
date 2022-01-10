@@ -295,6 +295,14 @@ useEffect(() => {
 ## Redux-Thunk 
 - là một middleware phổ biến nhất được dùng để xử lý các action bất đồng bộ trong Redux
 
+## Stateless component 
+- là component không phụ thuộc vào life circle
+
+
+## Statefull component 
+- Nếu hành vi của một component phụ thuộc vào state của component thì nó có thể được gọi là Stateful component.
+
+
 ## Cach de optomize Fe nhanh hơn
 - Han che render nhung html ko can thiet vi du br space 
 - Nen su dung before after de thay the. 
@@ -309,7 +317,6 @@ padding: 10 0 0 10px;
 - Han che plugin lib khong can thiet 
 - xu thu vien nhu webpack gulp de nen file css lai 
 - Khong dc style inline trong html 
-
 
 ## Css
 
