@@ -2,6 +2,7 @@
 
 ## High order function 
 là function chấp nhận đầu vào và/hoặc đầu ra là một function được gọi là higher order function.
+
 ``
 const largeThan5 = (number) => number > 5
 const numbers = [1,3,5,7,9,11]
