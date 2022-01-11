@@ -1,5 +1,18 @@
 ## Javascript
 
+## Xử lý bất đồng bô có 3 cách: 
+- callback
+- Promise
+- Async / Await
+
+## Promise: 
+- resolve: một function sẽ được gọi nếu đoạn code bất đồng bộ trong Promise chạy thành công.
+- reject: một function sẽ được gọi nếu đoạn code bất đồng bộ trong Promise có lỗi xảy ra.
+- then: Dùng để xử lý sau khi Promise được thực hiện thành công (khi resolve được gọi) 
+- catch: Dùng để xử lý sau khi Promise có bất kỳ lỗi nào đó (khi reject được gọi).
+- finally: là những câu lệnh nằm trong khối mã finally phải được chạy hay được thực thi ở cuối cho dù có lỗi hay không
+
+
 ## High order function 
 là function chấp nhận đầu vào và/hoặc đầu ra là một function được gọi là higher order function.
 
