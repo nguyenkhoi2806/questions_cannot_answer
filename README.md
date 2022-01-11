@@ -316,6 +316,9 @@ useEffect(() => {
 - Nếu hành vi của một component phụ thuộc vào state của component thì nó có thể được gọi là Stateful component.
 
 
+## Reducers 
+- là các hàm thuần túy lấy trạng thái hiện tại của ứng dụng, thực hiện một hành động và trả về trạng thái mới. Các trạng thái này được lưu trữ dưới dạng đối tượng và chúng xác định trạng thái của ứng dụng thay đổi như thế nào để đáp ứng với hành động được gửi đến "store".
+
 ## Cach de optomize Fe nhanh hơn
 - Han che render nhung html ko can thiet vi du br space 
 - Nen su dung before after de thay the. 
