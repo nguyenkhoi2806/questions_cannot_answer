@@ -317,7 +317,7 @@ useEffect(() => {
 
 
 ## Reducers 
-- là các hàm thuần túy lấy trạng thái hiện tại của ứng dụng, thực hiện một hành động và trả về trạng thái mới. Các trạng thái này được lưu trữ dưới dạng đối tượng và chúng xác định trạng thái của ứng dụng thay đổi như thế nào để đáp ứng với hành động được gửi đến "store".
+- là những action handler, nó hoạt động kết nối giữa action và store và biến thành những thay đổi trong state. 
 
 ## Cach de optomize Fe nhanh hơn
 - Han che render nhung html ko can thiet vi du br space 
