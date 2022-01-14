@@ -1,5 +1,8 @@
 ## Javascript
 
+## Temporay dead zone la gi 
+- Temporal Dead Zone (TDZ), nghĩa là sẽ đưa ra một ReferenceError khi ta truy cập một biến trước khi nó được khởi tạo, thay vì trả về undefined như cách khai báo var
+
 ## Xử lý bất đồng bô có 3 cách: 
 - callback
 - Promise
