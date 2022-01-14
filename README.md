@@ -322,6 +322,22 @@ useEffect(() => {
 ## Reducers 
 - là những action handler, nó hoạt động kết nối giữa action và store và biến thành những thay đổi trong state. 
 
+
+## React.Memo
+- React.memo là một higher order component, được sử dụng để bọc các component. Bằng việc sử dụng React.memo, React sẽ bỏ qua việc render lại component và sử dụng kết đã render lần cuối cùng nếu component của bạn render cùng kết quả với cùng props.
+
+## useMemo
+- là hàm giống như helper cho phép chỉ định: lưu lại kết quả của hàm nào và những giá trị nào sẽ làm thay đổi kết quả đó => Tránh re-render
+
+## useCallback
+- Tránh re-render ở component con
+- Được sử dụng để chặn việc render không cần thiết giữa parent và children component
+
+
+## React.memo vs shouldComponentUpdate
+-  React.memo là một higher order component (HOC) được sinh ra nhằm sử dụng cho các functional component trong việc tối ưu hiệu suất render,  React.memo chỉ có thể xác định việc rerender dựa trên sự thay đổi của props 
+-  shouldComponentUpdate là một method của class based component, shouldComponentUpdate có thể xác định việc rerender dựa trên sự thay đổi của cả props và state.
+
 ## Cach de optomize Fe nhanh hơn
 - Han che render nhung html ko can thiet vi du br space 
 - Nen su dung before after de thay the. 
