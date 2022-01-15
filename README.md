@@ -359,6 +359,15 @@ const decrement = useCallback(() => {
 -  React.memo là một higher order component (HOC) được sinh ra nhằm sử dụng cho các functional component trong việc tối ưu hiệu suất render,  React.memo chỉ có thể xác định việc rerender dựa trên sự thay đổi của props 
 -  shouldComponentUpdate là một method của class based component, shouldComponentUpdate có thể xác định việc rerender dựa trên sự thay đổi của cả props và state.
 
+## Custom hook 
+- Là một function, nhận input và trả output.
+- Tên của nó bắt đầu bởi use như useQuery, useColor, …
+- Khác với functional component, custom hooks trả về một dữ liệu bình thường, không phải là jsx.
+- Tại sao sử dụng custom hook : 
+- Tái sử dụng ở nhiều component khác nhau có cùng logic xử lý. Từ đó nếu logic thay đổi thì chỉ cần sửa tại một nơi duy nhất.
+- Chia sẻ dữ liệu, logic giữa các component.
+- Ẩn các đoạn code có logic phức tạp của một component, giúp component dễ đọc hơn.
+
 ## wepback 
 - Webpack là công cụ giúp gói gọn toàn bộ file js, css(bao gồm cả scss,sass,..). Nó giúp bạn compile các module Javascript theo cấu trúc project. Ngoài ra nó có thể tối ưu tùy chọn theo môi trường khác nhau như development hay production.
 
