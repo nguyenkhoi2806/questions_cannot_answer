@@ -327,16 +327,47 @@ useEffect(() => {
 - React.memo là một higher order component, được sử dụng để bọc các component. Bằng việc sử dụng React.memo, React sẽ bỏ qua việc render lại component và sử dụng kết đã render lần cuối cùng nếu component của bạn render cùng kết quả với cùng props.
 
 ## useMemo
-- là hàm giống như helper cho phép chỉ định: lưu lại kết quả của hàm nào và những giá trị nào sẽ làm thay đổi kết quả đó => Tránh re-render
+-  giúp mình tạo ra một memoized value và chỉ tính toán ra value mới khi dependencies thay đổi.
+-  Chỉ tính toán value mới khi dependencies thay đổi.
+-  Nếu dùng empty dependencies thì không bao giờ tính toán lại value mới.
+
+```
+ const squaredNum = useMemo(()=> {
+    return squareNum(number);
+  }, [number]);
+  
+const squareNum(number){
+  console.log("Squaring will be done!");
+  return Math.pow(number, 2);
+}
+ return (<>{ squaredNum }</>)
+```
 
 ## useCallback
-- Tránh re-render ở component con
-- Được sử dụng để chặn việc render không cần thiết giữa parent và children component
+- Giúp mình tạo ra một memoized callback và chỉ tạo ra callback mới khi dêpndencies thay đổi .
+- Nếu dùng empty dependencies thì không bao giờ tạo ra function mới ,
+- Tránh đến việc rerender không cần thiết giữa component cha va component con 
+
+``
+const decrement = useCallback(() => {
+    setCount(count - 1)
+  }, [count])
+``
 
 
 ## React.memo vs shouldComponentUpdate
 -  React.memo là một higher order component (HOC) được sinh ra nhằm sử dụng cho các functional component trong việc tối ưu hiệu suất render,  React.memo chỉ có thể xác định việc rerender dựa trên sự thay đổi của props 
 -  shouldComponentUpdate là một method của class based component, shouldComponentUpdate có thể xác định việc rerender dựa trên sự thay đổi của cả props và state.
+
+## wepback 
+- Webpack là công cụ giúp gói gọn toàn bộ file js, css(bao gồm cả scss,sass,..). Nó giúp bạn compile các module Javascript theo cấu trúc project. Ngoài ra nó có thể tối ưu tùy chọn theo môi trường khác nhau như development hay production.
+
+## WebSocket là gì?
+- WebSocket là một giao thức giao tiếp full-duplex (song công hay gọi là hai hướng) trên một kết nối TCP duy nhất. Sự xuất hiện của nó giúp việc trao đổi dữ liệu giữa máy khách và máy chủ dễ dàng hơn. 
+
+
+## Sass
+Các chức năng của sass: Variables, Mixin, Import, Function,  Loops, Extends
 
 ## Cach de optomize Fe nhanh hơn
 - Han che render nhung html ko can thiet vi du br space 
@@ -354,6 +385,9 @@ padding: 10 0 0 10px;
 - Khong dc style inline trong html 
 
 ## Css
+
+## BEM 
+- viet tac cua Block Element Modifier
 
 ## Các position
 - static: Đưa phần tử về hiển thị theo kiểu mặc định.
