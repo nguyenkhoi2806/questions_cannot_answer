@@ -326,6 +326,9 @@ useEffect(() => {
 ## React.Memo
 - React.memo là một higher order component, được sử dụng để bọc các component. Bằng việc sử dụng React.memo, React sẽ bỏ qua việc render lại component và sử dụng kết đã render lần cuối cùng nếu component của bạn render cùng kết quả với cùng props.
 
+## useSelector = mapStateToProps
+## useDispatch = ispatch 
+
 ## useMemo
 -  giúp mình tạo ra một memoized value và chỉ tính toán ra value mới khi dependencies thay đổi.
 -  Chỉ tính toán value mới khi dependencies thay đổi.
