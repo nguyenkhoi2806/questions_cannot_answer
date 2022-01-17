@@ -350,8 +350,6 @@ const squareNum(number){
 - Nếu dùng empty dependencies thì không bao giờ tạo ra function mới ,
 - Tránh đến việc rerender không cần thiết giữa component cha va component con 
  
-
-
 ## React.memo vs shouldComponentUpdate
 -  React.memo là một higher order component (HOC) được sinh ra nhằm sử dụng cho các functional component trong việc tối ưu hiệu suất render,  React.memo chỉ có thể xác định việc rerender dựa trên sự thay đổi của props 
 -  shouldComponentUpdate là một method của class based component, shouldComponentUpdate có thể xác định việc rerender dựa trên sự thay đổi của cả props và state.
@@ -382,6 +380,13 @@ const squareNum(number){
 
 ## Virtural Dom 
 -  là một Abstraction nhẹ của DOM. việc cập nhập không gây ảnh hưởng tới DOM thực Nó có tất cả các thuộc tính giống như object DOM thật, nhưng nó không có khả năng update trực tiếp như DOM thật. Trong thực tế, các Virtual DOM mới sẽ được tạo sau khi render lại.
+
+## Tại sao quan tâm Mobile first
+- 
+
+## Put Api, Patch Api 
+- put update toan bo entity 
+- patch update 1 phan entity
 
 ## wepback 
 - Webpack là công cụ giúp gói gọn toàn bộ file js, css(bao gồm cả scss,sass,..). Nó giúp bạn compile các module Javascript theo cấu trúc project. Ngoài ra nó có thể tối ưu tùy chọn theo môi trường khác nhau như development hay production.
