@@ -373,6 +373,16 @@ const squareNum(number){
 - Style component
 - Stateless Component
 
+## Khách nhau Virtualral Dom vs Dom thiệt
+- Real DOM: Update chậm, Có thể update trực tiếp HTML, Tạo ra DOM mới nếu element update,  Lãng phí nhiều bộ nhớ
+- Virtual DOM: Update nhanh, Không thể update trực tiếp HTML, Update JSX nếu element update, Không lãng phí bộ nhớ
+
+## Dom là gì
+- DOM là tên gọi viết tắt của (Document Object Model – tạm dịch Mô hình Các Đối tượng Tài liệu). Là một chuẩn được định nghĩa bởi W3C. DOM được dùng để truy xuất và thao tác trên các tài liệu có cấu trúc dạng HTML hay XML bằng các ngôn ngữ lập trình thông dụng như Javascript, PHP
+
+## Virtural Dom 
+-  là một Abstraction nhẹ của DOM. việc cập nhập không gây ảnh hưởng tới DOM thực Nó có tất cả các thuộc tính giống như object DOM thật, nhưng nó không có khả năng update trực tiếp như DOM thật. Trong thực tế, các Virtual DOM mới sẽ được tạo sau khi render lại.
+
 ## wepback 
 - Webpack là công cụ giúp gói gọn toàn bộ file js, css(bao gồm cả scss,sass,..). Nó giúp bạn compile các module Javascript theo cấu trúc project. Ngoài ra nó có thể tối ưu tùy chọn theo môi trường khác nhau như development hay production.
 
