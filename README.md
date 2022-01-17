@@ -365,6 +365,14 @@ const squareNum(number){
 - Chia sẻ dữ liệu, logic giữa các component.
 - Ẩn các đoạn code có logic phức tạp của một component, giúp component dễ đọc hơn.
 
+## Design parten pho bien react
+- Condition Rendering
+- High order component 
+- Container component
+- Layout component
+- Style component
+- Stateless Component
+
 ## wepback 
 - Webpack là công cụ giúp gói gọn toàn bộ file js, css(bao gồm cả scss,sass,..). Nó giúp bạn compile các module Javascript theo cấu trúc project. Ngoài ra nó có thể tối ưu tùy chọn theo môi trường khác nhau như development hay production.
 
