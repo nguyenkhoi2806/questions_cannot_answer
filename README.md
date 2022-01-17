@@ -324,15 +324,14 @@ useEffect(() => {
 
 
 ## React.Memo
-- React.memo là một higher order component, được sử dụng để bọc các component. Bằng việc sử dụng React.memo, React sẽ bỏ qua việc render lại component và sử dụng kết đã render lần cuối cùng nếu component của bạn render cùng kết quả với cùng props.
+- React.memo là một higher order component, được sử dụng để bọc các component. ghi nhớ lại prop cua component để quyết có render lại hay không.  => Tránh đến việc render lại component ko cần 
 
 ## useSelector = mapStateToProps
 ## useDispatch = ispatch 
 
 ## useMemo
--  giúp mình tạo ra một memoized value và chỉ tính toán ra value mới khi dependencies thay đổi.
+-  Tránh thực hiện 1 logic nào đó không cần thiết.  
 -  Chỉ tính toán value mới khi dependencies thay đổi.
--  Nếu dùng empty dependencies thì không bao giờ tính toán lại value mới.
 
 ```
  const squaredNum = useMemo(()=> {
@@ -347,15 +346,10 @@ const squareNum(number){
 ```
 
 ## useCallback
-- Giúp mình tạo ra một memoized callback và chỉ tạo ra callback mới khi dêpndencies thay đổi .
+- Giúp mình tránh tạo ra hàm mới 1 cách không cần thiết, và chỉ tạo ra function mới khi dêpndencies thay đổi .
 - Nếu dùng empty dependencies thì không bao giờ tạo ra function mới ,
 - Tránh đến việc rerender không cần thiết giữa component cha va component con 
-
-``
-const decrement = useCallback(() => {
-    setCount(count - 1)
-  }, [count])
-``
+ 
 
 
 ## React.memo vs shouldComponentUpdate
