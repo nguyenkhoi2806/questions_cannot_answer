@@ -1,5 +1,20 @@
 ## Javascript
 
+## ++ 
+- Phép tăng giá trị hiện tại lên 1 đơn vị. Phép này có hai cách sử dụng đó là đặt nó trước biến và đặt nó sau biến.
+- Trường hợp đứng trước biến thì nó sẽ tăng trước khi lấy giá trị, ví dụ: 
+```
+var c = 12;
+alert(++c); // kết quả là 13
+alert(c); // kết quả là 13
+```
+- Trường hợp đứng sau biến thì nó sẽ lấy giá trị rồi tăng lên: 
+```
+var c = 12;
+alert(c++); // kết quả là 12
+alert(c); // kết quả là 13
+```
+
 ## arrown function vs function 
 - Arrow function không định nghĩa giá trị this của riêng nó giống như function.
 - Arrow function không phù hợp làm phương thức cho object
