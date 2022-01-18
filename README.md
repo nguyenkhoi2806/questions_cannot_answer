@@ -376,20 +376,26 @@ const squareNum(number){
 - Virtual DOM: Update nhanh, Không thể update trực tiếp HTML, Update JSX nếu element update, Không lãng phí bộ nhớ
 
 ## Dom là gì
-- DOM là tên gọi viết tắt của (Document Object Model – tạm dịch Mô hình Các Đối tượng Tài liệu). Là một chuẩn được định nghĩa bởi W3C. DOM được dùng để truy xuất và thao tác trên các tài liệu có cấu trúc dạng HTML hay XML bằng các ngôn ngữ lập trình thông dụng như Javascript, PHP
+- DOM là tên gọi viết tắt của (Document Object Model). Là một chuẩn được định nghĩa bởi W3C. DOM được dùng để truy xuất và thao tác trên các tài liệu có cấu trúc dạng HTML hay XML bằng các ngôn ngữ lập trình thông dụng như Javascript, PHP
 
 ## Virtural Dom 
 -  là một Abstraction nhẹ của DOM. việc cập nhập không gây ảnh hưởng tới DOM thực Nó có tất cả các thuộc tính giống như object DOM thật, nhưng nó không có khả năng update trực tiếp như DOM thật. Trong thực tế, các Virtual DOM mới sẽ được tạo sau khi render lại.
 
 ## Tại sao quan tâm Mobile first
-- 
+- Tối ưu cho người dùng di động
+- Đở tốn thơi gian làm App
 
 ## Put Api, Patch Api 
 - put update toan bo entity 
 - patch update 1 phan entity
 
+## CI/CD
+ - CI (Continuous Integration) và CD (Continuous Delivery), ý nói là quá trình tích hợp (integration) thường xuyên, nhanh chóng hơn khi code cũng như thường xuyên cập nhật phiên bản mới (delivery).
+
 ## wepback 
 - Webpack là công cụ giúp gói gọn toàn bộ file js, css(bao gồm cả scss,sass,..). Nó giúp bạn compile các module Javascript theo cấu trúc project. Ngoài ra nó có thể tối ưu tùy chọn theo môi trường khác nhau như development hay production.
+- Tối ưu như thế nào: 
+- nén 1 file js từ 6mb xuống còn 76 kb
 
 ## WebSocket là gì?
 - WebSocket là một giao thức giao tiếp full-duplex (song công hay gọi là hai hướng) trên một kết nối TCP duy nhất. Sự xuất hiện của nó giúp việc trao đổi dữ liệu giữa máy khách và máy chủ dễ dàng hơn. 
