@@ -28,6 +28,14 @@
 - Không chạy được nếu JavaScript bị disable, hoặc ở các trình duyệt cũ không nhận JavaScript ES6
 - SEO không tốt bằng Server Side Rendering 
 
+
+## instance of la gi 
+- Nó trả về true nếu obj thuộc về Class hoặc một lớp kế thừa từ nó.
+```
+let arr = [1, 2, 3];
+alert( arr instanceof Array ); // true
+```
+
 ## Rest Parameter là gì?
 - Rest Parameter (hay còn gọi là đại diện của các tham số còn lại) cho phép bạn biểu diễn một số lượng vô hạn đối số dưới dạng một mảng.
 ```
@@ -429,6 +437,12 @@ const squareNum(number){
 - Tái sử dụng ở nhiều component khác nhau có cùng logic xử lý. Từ đó nếu logic thay đổi thì chỉ cần sửa tại một nơi duy nhất.
 - Chia sẻ dữ liệu, logic giữa các component.
 - Ẩn các đoạn code có logic phức tạp của một component, giúp component dễ đọc hơn.
+
+## React fragment
+- React Fragment cho phép bọc các elemnt bên trong. 
+
+## React và ReactDOM
+- React và ReactDOM chỉ mới được chia thành hai thư viện khác nhau. ReactDOM trưng bày các phương thức dành riêng cho DOM, trong khi React có các công cụ cốt lõi được React chia sẻ trên các nền tảng khác nhau
 
 ## Design parten pho bien react
 - Condition Rendering
