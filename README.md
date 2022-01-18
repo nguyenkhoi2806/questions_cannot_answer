@@ -115,7 +115,7 @@ khai vs usetrict se la undifine
 ```
 
 ## Prototype
-- Prototype là cơ chế mà các object trong javascript kế thừa các tính năng từ một object khác.
+- Prototype là 1 phương thức dùng để hình thành lên 1 đối tượng của hàm contructor 
 
 ```
 - example: 
