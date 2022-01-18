@@ -1,5 +1,33 @@
 ## Javascript
 
+
+## Server side rendering 
+- Khi người dùng vào một trang web, trình duyệt sẽ gửi GET request tới web server
+- Web server sẽ nhận request, đọc dữ liệu từ database.
+- Web server sẽ render HTML, trả về cho browser để hiển thị cho người dùng
+Ưu 
+- Initial load nhanh, dễ otpimize, vì toàn bộ dữ liệu đã được xử lý ở server. Client chỉ việc hiển thị.
+- SEO tốt vì khi bot của Google, Bing vào web sẽ thấy toàn bộ dữ liệu dưới dạng HTML
+- Chạy được trên phần lớn mọi trình duyệt, kể cả disable JavaScript vẫn chạy tố
+Nhược
+- Mỗi lần người dùng chuyển trang là site phải load lại nhiều lần
+- Nặng server vì server phải xử lý nhiều logic và dữ liệu. 
+- Tốn băng thông vì server phải gửi nhiều dữ liệu thừa và trùng  (HTML, header, footer).
+- Tương tác không tốt như Client Side rendering vì trang phải refresh, load lại nhiều lần.
+
+## Client Side redering
+- SPA – Single Page Application. Ứng dụng nằm trong 1 page duy nhất nên được gọi là Single Page Application.
+- Ưu: 
+- Page chỉ cần load một lần duy nhất. Khi user chuyển trang hoặc thêm dữ liệu, JavaScript sẽ lấy và gửi dữ liệu từ server qua AJAX
+- Chuyển logic sang client nên giảm tải được một phần cho server.
+- Giảm được băng thông do chỉ cần lấy JSON và dữ liệu cần thiết, thay vì phải lấy toàn bộ trang
+- SPA hoạt động mượt mà hơn vì code chạy trên browser, không cần load đi loại lại nhiều
+- Nhược điểm: 
+- Initial load sẽ chậm hơn nếu không biết optimize. 
+- Đòi hỏi project phải chia làm 2 phần riêng là back-end (REST api) và front-end
+- Không chạy được nếu JavaScript bị disable, hoặc ở các trình duyệt cũ không nhận JavaScript ES6
+- SEO không tốt bằng Server Side Rendering 
+
 ## Rest Parameter là gì?
 - Rest Parameter (hay còn gọi là đại diện của các tham số còn lại) cho phép bạn biểu diễn một số lượng vô hạn đối số dưới dạng một mảng.
 ```
