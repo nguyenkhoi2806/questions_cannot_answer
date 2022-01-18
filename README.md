@@ -36,6 +36,14 @@ console.log(plus2(3)) // 5
 ## Equality trong JavaScript?
 - Strict comparison (ví dụ: ===) kiểm tra giá trị bằng nhau mà không tự động ép kiểu.
 - Abstract comparison (ví dụ: ==) kiểm tra giá trị bằng nhau có tự động ép kiểu.
+- So sánh object: Đối với so sánh object bằng tham chiếu: hai object được gọi là bằng nhau khi và chỉ khi chúng cùng tham chiếu đến cùng một địa chỉ bộ nhớ. Hay nói ngắn gọn là chúng hoàn toàn giống nhau.
+
+``
+let x = {};
+let y = {}; // khởi tạo object độc lập
+console.log(y == x); // false
+console.log(y === x); // false
+``
 
 ## Các loại dữ liệu tích hợp sẵn trong Javascript?
 - string
