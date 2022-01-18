@@ -400,6 +400,9 @@ const squareNum(number){
 ## WebSocket là gì?
 - WebSocket là một giao thức giao tiếp full-duplex (song công hay gọi là hai hướng) trên một kết nối TCP duy nhất. Sự xuất hiện của nó giúp việc trao đổi dữ liệu giữa máy khách và máy chủ dễ dàng hơn. 
 
+## Restful API là gì?
+- Restful API là một trong những tiêu chuẩn được sử dụng để thiết kế API cho các ứng dụng web.  Nó thường bao gồm các trạng thái tài nguyên đã được định dạng sẵn và được truyền tải thông qua HTTP. Một chức năng quan trọng nhất của REST là: quy định các cách sử dụng HTTP method chẳng hạn như: Post, Get, Delete, Put,..
+
 
 ## Sass
 Các chức năng của sass: Variables, Mixin, Import, Function,  Loops, Extends
