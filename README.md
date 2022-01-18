@@ -1,5 +1,13 @@
 ## Javascript
 
+## Rest Parameter là gì?
+- Rest Parameter (hay còn gọi là đại diện của các tham số còn lại) cho phép bạn biểu diễn một số lượng vô hạn đối số dưới dạng một mảng.
+```
+function myFunc(a, b, ...args) {
+   // code
+}
+```
+
 ## ++ 
 - Phép tăng giá trị hiện tại lên 1 đơn vị. Phép này có hai cách sử dụng đó là đặt nó trước biến và đặt nó sau biến.
 - Trường hợp đứng trước biến thì nó sẽ tăng trước khi lấy giá trị, ví dụ: 
