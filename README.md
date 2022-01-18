@@ -1,5 +1,13 @@
 ## Javascript
 
+## arrown function vs function 
+- Arrow function không định nghĩa giá trị this của riêng nó giống như function.
+- Arrow function không phù hợp làm phương thức cho object
+- Arrow function không thể sử dụng làm hàm constructor
+- Arrow function không có thuộc tính prototype
+- Arrow function không được hoisted
+- Arrow function không bind arguments
+
 ## Temporay dead zone la gi 
 - Temporal Dead Zone (TDZ), nghĩa là sẽ đưa ra một ReferenceError khi ta truy cập một biến trước khi nó được khởi tạo, thay vì trả về undefined như cách khai báo var
 
