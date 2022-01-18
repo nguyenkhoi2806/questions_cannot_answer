@@ -40,9 +40,7 @@ console.log(plus2(3)) // 5
 
 ``
 let x = {};
-
 let y = {}; // khởi tạo object độc lập
-
 console.log(y == x); // false
 console.log(y === x); // false
 ``
