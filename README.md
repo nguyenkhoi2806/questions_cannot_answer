@@ -1,10 +1,15 @@
 ## Javascript
 
 
-##Set Timer function
+## Set Timer function
 - setImmediate() : chạy ngay lập tức (như cái tên của nó) =))
 - setTimeout() : chạy trong một khoảng thời gian.
 - setInterval(): lặp đi lặp lại trong khoảng thời gian
+
+## Clear timer functions
+- clearImmediate() : dừng một setImmediate objects, tạo bởi hàm setImmediate()
+- clearTimeout() : dừng một setTimeout objects, tạo bởi hàm setTimeout()
+- clearInterval() : dừng một setInterval objects, tạo bởi hàm setInterval()
 
 ## Server side rendering 
 - Khi người dùng vào một trang web, trình duyệt sẽ gửi GET request tới web server
