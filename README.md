@@ -1,6 +1,11 @@
 ## Javascript
 
 
+##Set Timer function
+- setImmediate() : chạy ngay lập tức (như cái tên của nó) =))
+- setTimeout() : chạy trong một khoảng thời gian.
+- setInterval(): lặp đi lặp lại trong khoảng thời gian
+
 ## Server side rendering 
 - Khi người dùng vào một trang web, trình duyệt sẽ gửi GET request tới web server
 - Web server sẽ nhận request, đọc dữ liệu từ database.
