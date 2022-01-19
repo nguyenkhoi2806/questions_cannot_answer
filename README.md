@@ -494,6 +494,8 @@ const squareNum(number){
 ## Restful API là gì?
 - Restful API là một trong những tiêu chuẩn được sử dụng để thiết kế API cho các ứng dụng web.  Nó thường bao gồm các trạng thái tài nguyên đã được định dạng sẵn và được truyền tải thông qua HTTP. Một chức năng quan trọng nhất của REST là: quy định các cách sử dụng HTTP method chẳng hạn như: Post, Get, Delete, Put,..
 
+## React Dom là gì ? 
+- Thư viện để render element, và dùng element đó render vào Dom là cầu nối giữa React và DOm
 
 ## Sass
 Các chức năng của sass: Variables, Mixin, Import, Function,  Loops, Extends
