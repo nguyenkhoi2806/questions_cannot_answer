@@ -193,6 +193,7 @@ khai vs usetrict se la undifine
 
 ## Prototype
 - Prototype là 1 phương thức dùng để hình thành lên 1 đối tượng của hàm contructor 
+- Việc sử dụng prototype sẽ giúp tiết kiệm được bộ nhớ, có thể dùng chung cho các tối tượng được tạo ra từ phương thức new User ( ví dụ trực tiếp khai báo phương thức trong object constructor sẽ không hay bằng thêm qua prototype )
 
 ```
 - example: 
