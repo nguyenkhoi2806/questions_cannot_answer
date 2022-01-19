@@ -154,7 +154,7 @@ This trong javscript để đại diện cho một đối tượng (Object).
 
 
 ## ES5 vs ES6 khac nhau nhu the nao
-- es5 khac vs es6 co arrow function, co const let, promises, class, module
+- es5 khac vs es6 co arrow function, co const let, promises, class, module, rest parameter, spread.
 
 ## Hoisting javascript?
  hoisting là cơ chế của JavaScript cho phép các khai báo biến hoặc hàm được dời lên trên đầu phạm vi của chúng trước khi thực thi đoạn code.
