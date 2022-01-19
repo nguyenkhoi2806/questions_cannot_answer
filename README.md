@@ -251,8 +251,7 @@ yarn
 - Yarn cung cấp một cấu trúc các dependencies bằng phẳng so với cấu trúc lồng nhau của npm.
 
 ## Callback
-Callback là một hàm sẽ được thực hiện sau khi một hàm khác đã thực hiện xong - vì thế nó có tên là callback.
-Callback là một cách để đảm bảo code nhất định không thực thi cho đến khi code khác thực hiện xong.
+Là một hàm truyèn qua đối số khi gọi hàm khác
 ```
 - example 
 function doHomework(subject, callback) {
