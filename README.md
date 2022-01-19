@@ -17,7 +17,7 @@
 - Web server sẽ render HTML, trả về cho browser để hiển thị cho người dùng
 ### Ưu 
 - Initial load nhanh, dễ otpimize, vì toàn bộ dữ liệu đã được xử lý ở server. Client chỉ việc hiển thị.
-- SEO tốt vì khi bot của Google, Bing vào web sẽ thấy toàn bộ dữ liệu dưới dạng HTML
+- SEO tốt vì khi bot của Google
 - Chạy được trên phần lớn mọi trình duyệt, kể cả disable JavaScript vẫn chạy tố
 ### Nhược
 - Mỗi lần người dùng chuyển trang là site phải load lại nhiều lần
