@@ -218,7 +218,7 @@ console.log(person1.name) // Output" Kien
 - là một Queue, tất cả cá event được push vào Queue này, mỗi khi một sự kiện được phát ra nó sẽ được push vào Queue. Trong Queue này, thứ tự thực hiện là vào trước thì sẽ được xử lí trước, vào sau thì được xử lí sau.
 
 ## Closure
-- Trong javascript, closure là một hàm tham chiếu các biến có phạm vi ngoài phạm vi của hàm đó. Nó cho phép bạn truy cập các biến hoặc tham số có phạm vị ngoài phạm vị hàm đó. Để sử dụng closure, đơn giản là bạn khai báo một function bên trong một function khác và return nó ra.
+-  closure là một hàm ghi nhớ nơi nó được tạo và có thể truy cập tham chiếu các biến có phạm vi ngoài phạm vi của nó, Nó cho phép bạn truy cập các biến hoặc tham số có phạm vị ngoài phạm vị hàm đó. Để sử dụng closure, đơn giản là bạn khai báo một function bên trong một function khác và return nó ra.
 ```
 example: 
 function showName (firstName, lastName) {
