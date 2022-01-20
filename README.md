@@ -229,7 +229,8 @@ console.log(person1.name) // Output" Kien
 ```
 
 ## Event loop
-- Event loop là cơ chế giúp Javascript có thể thực hiện nhiều thao tác cùng một lúc (concurrency)
+- Event Loop là cơ chế giúp Javascript có thể thực hiện nhiều thao tác cùng một lúc
+- Nhiệm vụ của Event Loop rất đơn giản đó là đọc Stack và Event Queue. Nếu nhận thấy Stack rỗng nó sẽ nhặt Event đầu tiên trong Event Queue và handler (callback hoặc listener) gắn với Event đó và đẩy vào Stack.
 
 
 ## Closure
