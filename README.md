@@ -1,5 +1,18 @@
 ## Javascript
 
+## Synchronous là gì ? 
+- Có nghĩa là xử lý đồng bộ, chương trình sẽ chạy theo từng bước và chỉ khi nào bước 1 thực hiện xong thì mới nhảy sang bước 2, khi nào chương trình này chạy xong mới nhảy qua chương trình khác. 
+# Mặt tốt của Synchronous: 
+- Chương trình sẽ chạy theo đúng thứ tự và có nguyên tắc nên sẽ không mắc phải các lỗi về tiến trình không cần thiết.
+# Mặt xấu của Synchronous
+- Chương trình chạy theo thứ tự đồng bộ nên sẽ sinh ra trạng thái chờ và là không cần thiết trong một số trường hợp, lúc này bộ nhớ sẽ dễ bị tràn vì phải lưu trữ các trạng thái chờ không cần thiết.
+
+## Asynchronous là gì? 
+- là xử lý bất động bộ, nghĩa là chương trình có thể nhảy đi bỏ qua một bước nào đó,  được ví như một chương trình hoạt động không chặt chẽ và không có quy trình nên việc quản lý rất khó khăn
+# Mặt tốt của Asynchronous: 
+- Có thể xử lý nhiều công việc một lúc mà không cần phải chờ đợi nên tạo cảm giác thoải mái 
+# Mắt xấu: 
+- Nếu một chuong trình đòi hỏi phải có quy trình thì bạn không thể sử dụng Asynchronous được. vd: Một thao tác thêm dữ liệu phải thông qua hai công đoạn là validate dữ liệu và thêm dữ liệu, nếu thao tác validate xảy ra sau thao tác thêm thì còn gì tệ hại hơn nữa 😃.
 
 ## Set Timer function
 - setImmediate() : chạy ngay lập tức (như cái tên của nó) =))
