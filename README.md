@@ -229,7 +229,8 @@ console.log(person1.name) // Output" Kien
 ```
 
 ## Event loop
-- là một Queue, tất cả cá event được push vào Queue này, mỗi khi một sự kiện được phát ra nó sẽ được push vào Queue. Trong Queue này, thứ tự thực hiện là vào trước thì sẽ được xử lí trước, vào sau thì được xử lí sau.
+- Event loop là cơ chế giúp Javascript có thể thực hiện nhiều thao tác cùng một lúc (concurrency)
+
 
 ## Closure
 -  closure là một hàm lưu nhớ nơi nó tạo  có thể truy cập tham chiếu các biến có phạm vi ngoài phạm vi của nó. Để sử dụng closure, đơn giản là bạn khai báo một function bên trong một function khác và return nó ra.
