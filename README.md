@@ -358,8 +358,10 @@ Vd: theme, danh mục sản phẩm được chọn, giao diện tuỳ chỉnh, d
 ## ReactJs
 
 ## Supper trong reactjs 
-la khi viet contructor phai co supper, vi khi khau bao supper chung ta se xu dung dc this trong component do , va neu khong khai bao trong contustor thi se bi loi 
-
+- Việc gọi super ở đây nhằm mục đích khởi tạo biến this từ Parent, vì  1 Component được thừa kế từ React.Component. Sau khi gọi super, chúng ta sẽ truy cập được this một cách bình thường.
+- Khi làm việc với React thì khi viết constructor mà không có super() thì sẽ lỗi. Không viết super(props) thì sẽ không thể dùng được this.props.
+- Trong Javascript super như là "hàm khởi tạo của class cha" (parent class constructor). 
+  
 ## Vong doi reactjs 
 gom 3 pha chinh, Mounting, updating, Unmounting: 
 - Mounting: gom cac ham: constructor, render, componentDidmount, 
