@@ -1,5 +1,10 @@
 ## Javascript
 
+## Bind là gì
+- Cho phép ràng buộc this cho một phương thức (function)
+- Phương thức bin sẽ trả vể 1 hàm mới với context được bind
+- Hàm được trả về từ bind vẫn có thể nhận các đối số của hàm gốc
+
 ## Synchronous là gì ? 
 - Có nghĩa là xử lý đồng bộ, chương trình sẽ chạy theo từng bước và chỉ khi nào bước 1 thực hiện xong thì mới nhảy sang bước 2, khi nào chương trình này chạy xong mới nhảy qua chương trình khác. 
 ### Mặt tốt của Synchronous: 
@@ -88,7 +93,7 @@ alert(c); // kết quả là 13
 - Arrow function không thể sử dụng làm hàm constructor
 - Arrow function không có thuộc tính prototype
 - Arrow function không được hoisted
-- Arrow function không bind arguments
+- Arrow function không bind arguments 
 
 ## Temporay dead zone la gi 
 - Temporal Dead Zone (TDZ), nghĩa là sẽ đưa ra một ReferenceError khi ta truy cập một biến trước khi nó được khởi tạo, thay vì trả về undefined như cách khai báo var
