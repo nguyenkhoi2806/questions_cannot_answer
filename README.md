@@ -21,7 +21,7 @@
 
 ## Set Timer function
 - setImmediate() : chạy ngay lập tức (như cái tên của nó) =))
-- setTimeout() : chạy trong một khoảng thời gian.
+- setTimeout() : chạy trong một khoảng thời gian. thường được sử dụng nếu  muốn hàm của mình thực thi bao nhiêu mili giây kể từ khi gọi method setTimeout()
 - setInterval(): lặp đi lặp lại trong khoảng thời gian
 
 ## Clear timer functions
