@@ -529,6 +529,9 @@ const squareNum(number){
 
 ## Tai sao viet Unitest
 - Tạo ra môi trường lý tưởng để kiểm tra bất kỳ đoạn code nào
+- Phát hiện các thuật toán thực thi không hiệu quả,
+- Phát hiện các vấn đề về thiết kế, xử lý hệ thống,
+- Phát hiện các lỗi nghiêm trọng có thể xảy ra trong những tình huống rất hẹp.
 - 
 
 ## Reselect để tạo selectors? 
