@@ -527,6 +527,10 @@ const squareNum(number){
 - Một selectors sẽ không tính toán lại trừ khi một trong các đối số của nó thay đổi.
 - Selectors dễ dàng tái sử dụng, và nó có thể sử dụng để làm đầu vào cho các selector khác.
 
+## Tai sao viet Unitest
+- Tạo ra môi trường lý tưởng để kiểm tra bất kỳ đoạn code nào
+- 
+
 ## Reselect để tạo selectors? 
 - Reselect giúp cải thiện performance vì nó cung cấp một cách để tạo selectors được ghi nhớ và chỉ tính toán lại khi đầu vào của chúng thay đổi. 
 
