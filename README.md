@@ -557,24 +557,20 @@ padding: 10 0 0 10px;
 
 ## Css
 
+## FlexBox:
+- là kỹ thuật 
+- Gồm Container và items; 
+- Container:
+- main-axis: quyết định hướng của các items 
+- main-start: quyết định item hiện thị theo hướng nào 
+- cross-axis: luôn vuông góc với trục chính: gồm cross-start, cross-end
+
+- Items: 
+- cross-size: kích thước với chiều song song với cross axis 
+- main-size: kích thước với chiều song song với main axis
+
 ## BEM 
 - viet tac cua Block Element Modifier
-
-## Các position
-- static: Đưa phần tử về hiển thị theo kiểu mặc định.
-- fixed: Hiển thị luôn đi theo trình duyệt khi cuộn trang.
-- top:  Căn vị trí hiển thị của phần tử theo hướng từ trên xuống dưới. Giá trị càng cao thì phần tử càng thụt xuống dưới.
-- bottom:  Căn vị trí hiển thị của phần tử theo hướng từ dưới lên trên. Giá trị càng cao thì phần tử càng hiển thị lên cao.
-- left: Căn vị trí hiển thị từ trái sang phải. Giá trị càng cao thì phần tử sẽ càng thụt về bên phải.
-- right: Căn vị trí hiển thị từ phải sang trái. Giá trị càng cao thì phần tử sẽ càng thụ về bên trái.
-- relative: Dùng để thiết lập một phần tử sử dụng các thuộc tính position mà không làm ảnh hưởng đến việc hiển thị ban đầu.
-- absolute: Dùng để thiết lập vị trí của một phần tử nhưng nó sẽ luôn nằm trong một phần tử mẹ đang là relative.
-
-## Flexbox
-Flexbox Layout là một kiểu bố cục trang có khả năng tự cân đối kích thước, chiều rộng/chiều cao và thứ tự phần tử bên trong để phù hợp với tất cả các loại thiết bị màn hình.
-thành phần gồm
-- Container: là thành phần lớn bao quanh các phần tử bên trong, các item bên trong sẽ hiển thị dựa trên thiết lập của container này.
-- item: là phần tử con của container, bạn có thể thiết lập nó sẽ sử dụng bao nhiêu cột trong một container, hoặc thiết lập thứ tự hiển thị của nó.
 
 ## Css Unit
 - Asolute unit: px, pt, cm, pc. S
@@ -595,6 +591,37 @@ thành phần gồm
 - contain: lấy chiều dài nhất có thể đảm bảo hình ảnh không bị cắt xén
 - cover: chọn chiều nhất của ảnh nhưng sẽ che khuất ảnh và sẻ không hở khoảng trắng
  
+## Background-origin: giong background-clip nhưng dùng đi kèm với background-image
+
+## Function css
+- var(): đặt biến cho css; 
+- linear-gradient: tạo ra 1 dải màu chuyễn đều đặn từ trái sang phải hoặc từ trên xuống dưới
+- rgba: red, green, blue, alpha ( độ trong suốt) 
+- calc: tính toán 
+- attr: lấy dc content attr trong html
+
+ ## Pseduo-classes
+ - lớp giả
+ - :root: tham chiếu đến phần tử gốc html 
+ - :hover: tham chiếu đến phần tử đang được hover
+ - :active: tham chiếu đến phần tử đang được click vào
+ - :first-child: tham chiếu đến phần tử đầu tiên của class đó
+ - :last-child: tham chiếu đến phần tử cuối cùng của class đó
+
+## Pseduo-element 
+- phần tử giả
+- ::before 
+- ::after
+- ::first-letter: ký tự đầu tiên của chữ
+- ::first-line: dòng chữ đầu tiên 
+- ::selection: tham chiếu khi select nôi dung trên trình duyệt
+
+## Position
+- Thiết lập vị trí cho các element
+- Relative: tương đối, sẽ không phụ thuộc vào đối tượng nào khác chỉ phụ thuộc vào chính element đó
+- Absolute: vị trí tuyệt đối sẽ phụ thuộc vào thẻ cha gần nhất có thuộc tính position. 
+- fixed: sẽ phụ thuộc vào trình duyệt.
+- sticky: sẽ cố định phần tử khi trình duyệt scroll đến phần tử đó
 
 ## Câu hỏi ngoài lề
 ## Khi lap trinh can quan tam dieu gi:
@@ -602,7 +629,6 @@ thành phần gồm
 - Xac dinh cac step de code feature do: - luot so qa, nhung function nao se duoc su dung lai, function nao chua co thi viet ra cai moi.   
 - Neu Feature business do phuc tap thi viet lai document
 - Code: => test => clean lai code dư thì bỏ, xem lại tên biến , function có hợp lý chưa
-
 
 ## Solid principle: 
 - single responsiple principle: moi 1 calss chi dam nhiem 1 chuc nang duy nhat
