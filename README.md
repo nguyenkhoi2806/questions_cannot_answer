@@ -585,6 +585,17 @@ thành phần gồm
 - vw (viewport width): ví dụ (1vw: có nghĩa là 1% chiều dọc ngang của kích thuớc trình duyệt)
 - vh (viewport hieght): ví dụ (1vh: có nghĩa là 1% chiều dọc đứng của kích thuớc trình duyệt)
 
+## Background-clip: 
+- Quyết định background đổ từ ranh giới nào.
+- border-box: đổ background từ border vào bên trong
+- padding-box: đổ backgrounnd từ padding
+- content-box: đổ background từ content. 
+
+## Background-size
+- contain: lấy chiều dài nhất có thể đảm bảo hình ảnh không bị cắt xén
+- cover: chọn chiều nhất của ảnh nhưng sẽ che khuất ảnh và sẻ không hở khoảng trắng
+ 
+
 ## Câu hỏi ngoài lề
 ## Khi lap trinh can quan tam dieu gi:
 - Xac dinh tinh nang cua feature do la gi ? 
