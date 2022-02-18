@@ -568,6 +568,17 @@ padding: 10 0 0 10px;
 - cross-size: kích thước với chiều song song với cross axis 
 - main-size: kích thước với chiều song song với main axis
 
+- Thuộc tính bao gồm: 
+- display: flex: quyết định có sử dụng layout flexbox hay không. 
+- flex-direction: row | collumn: thay đổi được phương hướng của main-axis mặc định là row.
+- flex-wrap: norwrap | wrap | wrap-reverse quyết định item hiển thị theo cách nào xuống dòng hoặc nằm ngang. 
+- flex-axis: xét kích thước của main-size
+- justify-content: canh các item theo phương.
+- align-content: giống justify-content nhưng trùng phương hướng với trục cross size
+- flex-grow: Dùng để thay đổi kích thước của main-size 
+- flex-shrink: Dùng để thu nhỏ lại
+- order: quuyết định thứ tự item. 
+
 ## BEM 
 - viet tac cua Block Element Modifier
 
