@@ -576,6 +576,14 @@ thành phần gồm
 - Container: là thành phần lớn bao quanh các phần tử bên trong, các item bên trong sẽ hiển thị dựa trên thiết lập của container này.
 - item: là phần tử con của container, bạn có thể thiết lập nó sẽ sử dụng bao nhiêu cột trong một container, hoặc thiết lập thứ tự hiển thị của nó.
 
+## Css Unit
+- Asolute unit: px, pt, cm, pc. S
+- Relative unit: 
+- %: Kích thước phụ thuộc vào thẻ chứa nó. 
+- rem: phụ thuộc vào thẻ html
+- em: phục thuộc vào font-size thẻ gần nhất chưá nó
+- vw (viewport width): ví dụ (1vw: có nghĩa là 1% chiều dọc ngang của kích thuớc trình duyệt)
+- vh (viewport hieght): ví dụ (1vh: có nghĩa là 1% chiều dọc đứng của kích thuớc trình duyệt)
 
 ## Câu hỏi ngoài lề
 ## Khi lap trinh can quan tam dieu gi:
