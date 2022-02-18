@@ -558,7 +558,6 @@ padding: 10 0 0 10px;
 ## Css
 
 ## FlexBox:
-- là kỹ thuật 
 - Gồm Container và items; 
 - Container:
 - main-axis: quyết định hướng của các items 
