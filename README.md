@@ -373,7 +373,6 @@ Vì những method được khởi tạo trong Class không tự động bind th
 ## Vong doi reactjs 
 gom 3 pha chinh, Mounting, updating, Unmounting: 
 - Mounting: gom cac ham: constructor, render, componentDidmount, 
-
 - Updating: gom cac ham : render(), ShouldComponentUpdate, ComponentDiDUpdate, ComponentWillRecieveProps: 
 - ComponentDidUpdate se chay khi tat ca cac component Da dc update, 
 - ShouldComponentuPdate: se ngan chan lai viec co nen Render lai khi state cap nhat khong thay doi gia tri moi 
@@ -407,6 +406,19 @@ useEffect(() => {
 }, []);
 ```
 
+## Cách tổ chức Redux 
+- Cách chia store: store sẽ chia theo từng đối tượng. 
+- Sử dụng selectors để lấy các giá trị trong store. tái sử dụng lại các selectors đó. 
+- Sử dụng middleware redux-thunk hoặc saga 
+- Đưa nhiều logic và trong Reducer 
+- Tách các logic phức tạp ra khỏi component
+- Đảm bảo state được tạo ra và sử dụng cho nhiều component. Tránh duplicate state.
+
+## Cách cải thiện Performance Redux 
+- Sử dụng createSelector  
+- Sử dụng duy nhất 1 action 
+- Sử dụng batch trong redux 
+
 ##  React hoạt động như thế nào?
 - React tạo ra một DOM ảo.
 - Khi trạng thái thay đổi trong một component, trước tiên nó chạy một thuật toán "khác biệt (diffing)", xác định những gì đã thay đổi trong DOM ảo.
@@ -418,27 +430,23 @@ useEffect(() => {
 ## Refs la gì 
 - Refs thường được dùng để trả về một tham chiếu tới 1 phần tử. Refs cho phép bạn truy cập trực tiếp vào phần tử DOM hoặc một phiên bản của thành phần.
 
-
 ## Redux-Thunk 
 - là một middleware phổ biến nhất được dùng để xử lý các action bất đồng bộ trong Redux
 
 ## Stateless component 
 - là component không phụ thuộc vào life circle
 
-
 ## Statefull component 
 - Nếu hành vi của một component phụ thuộc vào state của component thì nó có thể được gọi là Stateful component.
 
-
 ## Reducers 
 - là những action handler, nó hoạt động kết nối giữa action và store và biến thành những thay đổi trong state. 
-
 
 ## React.Memo
 - React.memo là một higher order component, được sử dụng để bọc các component. ghi nhớ lại prop cua component để quyết có render lại hay không.  => Tránh đến việc render lại component ko cần 
 
 ## useSelector = mapStateToProps
-## useDispatch = ispatch 
+## useDispatch = dispatch 
 
 ## useMemo
 -  Tránh thực hiện 1 logic nào đó không cần thiết.  
@@ -541,7 +549,15 @@ const squareNum(number){
 - Reselect giúp cải thiện performance vì nó cung cấp một cách để tạo selectors được ghi nhớ và chỉ tính toán lại khi đầu vào của chúng thay đổi. 
 
 ## Sass
-Các chức năng của sass: Variables, Mixin, Import, Function,  Loops, Extends
+- Các chức năng của sass: Variables, Mixin, Import, Function,  Loops, Extends
+
+## Lợi ích của Sass
+- Code nhanh chóng hơn. hiệu quả hơn và tiết kiệm hơn thời gian và công sức trong việc viết CSS
+- Có nhiều features trong sass
+
+## Điểm bất lợi của Sass
+- Phải combile ra css tốn thơi gian 
+- phải tốn thời gian học thêm  về sass 
 
 ## Cach de optomize Fe nhanh hơn
 - Han che render nhung html ko can thiet vi du br space 
