@@ -419,6 +419,15 @@ useEffect(() => {
 - Sử dụng duy nhất 1 action 
 - Sử dụng batch trong redux 
 
+## Ưu điểm nhược điểm của Redux
+- Dể debug vs test 
+- Có tool monitor 
+- Nếu tổ chức tốt sẽ dễ maitain
+
+## Nhược điểm Redux
+- Phải hiểu được cách hoạt động của Redux. 
+- Chỉ có 1 store ko chia thành nhiều store => sẽ dẫn đến tình trạng state sẽ bị trùng 
+
 ##  React hoạt động như thế nào?
 - React tạo ra một DOM ảo.
 - Khi trạng thái thay đổi trong một component, trước tiên nó chạy một thuật toán "khác biệt (diffing)", xác định những gì đã thay đổi trong DOM ảo.
