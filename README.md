@@ -421,12 +421,14 @@ useEffect(() => {
 
 ## Ưu điểm nhược điểm của Redux
 - Dể debug vs test 
-- Có tool monitor 
-- Nếu tổ chức tốt sẽ dễ maitain
+- Có tool monitor  
+- Sử dụng dc nhiêu cho thư viện như react vs angular, vujes. 
+- Đoán trước dc stage thay đỗi la 
 
 ## Nhược điểm Redux
 - Phải hiểu được cách hoạt động của Redux. 
 - Chỉ có 1 store ko chia thành nhiều store => sẽ dẫn đến tình trạng state sẽ bị trùng 
+- Tăng độ phức tap cho codeing  
 
 ##  React hoạt động như thế nào?
 - React tạo ra một DOM ảo.
