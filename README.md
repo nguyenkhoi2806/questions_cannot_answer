@@ -155,17 +155,17 @@ biên dịch => V8 Engine  chuyển code JavaScript thành mã thay vì dùng in
 This trong javscript để đại diện cho một đối tượng (Object).
 
 ## Khac nhau của var, let, const
-# var 
+## var 
 - Phạm vi hàm (function scope) hoặc phạm vi toàn cục (global scope)
 - Có thể gán lại (Re-assignable) và có thể khai báo lại (Re-declarable)
 - Không thuộc vùng chết tạm thời (Temporal Dead Zone - TDZ)
 
-# let 
+## let 
 - Phạm vi khối (Block scope)
 - Có thể gán lại nhưng không thể khai báo lại
 - Phụ thuộc vào vùng chết tạm thời (TDZ) 
 
-# const
+## const
 - Phạm vi khối
 - Không thể gán lại cũng không thể khai báo lại
 - Phụ thuộc vào vùng chết tạm thời
@@ -329,34 +329,34 @@ console.log(res); // 75
 ```
 
 ## Khác nhau localStorage vs sessionStorage vs Cookie
-# LocalStorage 
+## LocalStorage 
 - giống như một database của browser sẽ được lưu trử những thông tin của người dùng browser. Thông tin này được lưu trữ vĩnh viễn tới khi bạn xóa nó đi 
 Vd: theme, danh mục sản phẩm được chọn, giao diện tuỳ chỉnh, dashboard, layout ...
 
-# SessionStorage 
+## SessionStorage 
 - khá giống với localStorage. Ngoại trừ sessionStorage sẽ mất đi khi chúng ta đóng tab, đóng trình duyệt.
 - 1 Khuyết điểm của session Storage vs Local Storage là có thể bị đọc bởi Javascript. Do đó dễ bị đánh cắp thông tin. Vì vậy, chúng ta không nên lưu trữ những thông tin nhạy cảm như token ID, password, username, email của người dùng vào localStorage hay sessionStorage.
 
-# Cookie 
+## Cookie 
 - là một bản ghi đơn giản gồm key, value và được gửi kèm theo request của browser cho nên bạn có thể truy cập và xử lý cookie ở server side dựa vào cookie được gắn kèm với request, giới hạn về dung lượng lưu trữ khoảng 4KB
 - Khi đóng một tab, Cookie vẫn còn được lưu trên trình duyệt.
 - Cookie có thể mất đi sau khi đóng trình duyệt nếu nó được set expires là N/A
 - Cookie có option để chúng ta set ngày quá hạn cho nó. Nghĩa là có thể định nghĩa khi nào nó tự động xoá được. 
 
 ## Các mã status trong http: 
-# 1xx (100 – 199): 
+## 1xx (100 – 199): 
 - Yêu cầu đã được chấp nhận và quá trình xử lý yêu cầu của bạn đang được tiếp tục.
 
-# 2xx (200 – 299): 
+## 2xx (200 – 299): 
 - Yêu cầu của bạn đã được máy chủ tiếp nhận, hiểu và xử lý thành công.
 
-# 3xx (300 – 399): 
+## 3xx (300 – 399): 
 - Phía client cần thực hiện hành động bổ sung để hoàn tất yêu cầu.
 
-# 4xx (400 – 499): 
+## 4xx (400 – 499): 
 - Lỗi phía client – Yêu cầu không thể hoàn tất hoặc yêu cầu chứa cú pháp không chính xác. 4xx sẽ hiện ra khi có lỗi từ phía client do không đưa ra yêu cầu hợp lệ.
 
-# 5xx (500 – 599): 
+## 5xx (500 – 599): 
 - Server errors / Lỗi phía máy chủ – Máy chủ không thể hoàn thành yêu cầu được cho là hợp lệ. Khi 5xx xảy ra, bạn chỉ có thể đợi để bên hệ thống máy chủ xử lý xong.
 
 
@@ -528,13 +528,11 @@ const squareNum(number){
 ## CI/CD
  - CI (Continuous Integration) và CD (Continuous Delivery), ý nói là quá trình tích hợp (integration) thường xuyên, nhanh chóng hơn khi code cũng như thường xuyên cập nhật phiên bản mới (delivery).
 
-## wepback 
-- Webpack là công cụ giúp gói gọn toàn bộ file js, css(bao gồm cả scss,sass,..). Nó giúp bạn compile các module Javascript theo cấu trúc project. Ngoài ra nó có thể tối ưu tùy chọn theo môi trường khác nhau như development hay production.
-- Tối ưu như thế nào: 
-- nén 1 file js từ 6mb xuống còn 76 kb
-
-## WebSocket là gì?
-- WebSocket là một giao thức giao tiếp full-duplex (song công hay gọi là hai hướng) trên một kết nối TCP duy nhất. Sự xuất hiện của nó giúp việc trao đổi dữ liệu giữa máy khách và máy chủ dễ dàng hơn. 
+## Webback 
+- Chia nhỏ toàn bộ tài nguyên các thư viện và các tài nguyên phụ thuộc thành các "chunk" và chỉ tải các thành phần nhỏ này khi cần thiết.
+- Giúp quá trình tải các tài nguyên nhanh.
+- Mọi file tĩnh sau quá trình đóng gói sẽ ở dạng module.
+- Cho phép tích hợp các thư viên bên thứ ba ở dạng module.
 
 ## Restful API là gì?
 - Restful API là một trong những tiêu chuẩn được sử dụng để thiết kế API cho các ứng dụng web,  truyền tải thông qua HTTP. Một chức năng quan trọng nhất của REST là: quy định các cách sử dụng HTTP method chẳng hạn như: Post, Get, Delete, Put,..
@@ -554,7 +552,6 @@ const squareNum(number){
 - Phát hiện các thuật toán thực thi không hiệu quả,
 - Phát hiện các vấn đề về thiết kế, xử lý hệ thống,
 - Phát hiện các lỗi nghiêm trọng có thể xảy ra trong những tình huống rất hẹp.
-- 
 
 ## Reselect để tạo selectors? 
 - Reselect giúp cải thiện performance vì nó cung cấp một cách để tạo selectors được ghi nhớ và chỉ tính toán lại khi đầu vào của chúng thay đổi. 
