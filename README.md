@@ -517,6 +517,26 @@ const squareNum(number){
 ## Virtural Dom 
 -  là một Abstraction nhẹ của DOM. việc cập nhập không gây ảnh hưởng tới DOM thực Nó có tất cả các thuộc tính giống như object DOM thật, nhưng nó không có khả năng update trực tiếp như DOM thật. Trong thực tế, các Virtual DOM mới sẽ được tạo sau khi render lại.
 
+## Typescript: 
+### Typescript là gì: 
+- TypeScript là một ngôn ngữ, hướng đối tượng và biên dịch. Được phát triển bơi Microsoft. Nó là một phần mở rộng của JavaScript.
+
+### Tại sao nên sử dụng Typescript: 
+- Typescript thêm tính năng Static Typing vào JavaScript.C ó tính năng Static Typing giúp dễ dàng phát triển và duy trì các ứng dụng phức tạp hơn.
+- Hỗ trợ định nghĩa kiểu.
+
+### Static Typing là gì?
+- Mỗi biến (variable) có một kiểu cố định liên kết với nó. Kiểu của biến được kiểm tra lúc compiled-time và trình biên dịch yêu cầu ta phải khai báo rõ kiểu của biến trước khi sử dụng.
+
+###  Interface trong Typescript là gì? 
+- interface là một cấu trúc khai báo các tiêu chuẩn. Các lớp được dẫn xuất (derived) từ một interface phải tuân thủ các tiêu chuẩn do interface đặt ra.
+
+### Public, Private, Protected và Readonly modifiers trong Typescript là gì?
+- Public: Nó được truy xuất ở mọi nơi.
+- Private: không thể truy xuất chúng từ ngoài class của nó.
+- Protected giống như Private nhưng khác 1 điểm là nó có thể được truy xuất bởi instance của lớp kế thừa.
+- Readonly: được sử dụng để làm cho một thuộc tính ở dạng chỉ đọc, có thể được truy cập bên ngoài lớp, nhưng giá trị của chúng không thể thay đổi
+
 ## Tại sao quan tâm Mobile first
 - Tối ưu cho người dùng di động
 - Đở tốn thơi gian làm App
