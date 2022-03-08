@@ -708,21 +708,3 @@ Nhóm này gồm 7 mẫu thông dụng: Adapter, Bridge, Composite, Decorator, F
 - Behavioral Pattern: tập hợp các giải pháp liên quan đến các hành vi của đối tượng và giao tiếp giữa các đối tượng khác nhau.
 Nhóm này gồm 11 mẫu thông dụng: Strategy, State, Observer
 
-
-## Cau hoi cho cong ty
-Quy trinh lam viec
-- Sprint keo dai bao lau 
-- 1 Sprint co bao nhieu ticket cho moi nguoi 
-- 1 Co tong ket srpint hay khong 
-- Co stand up meeting hay khong 
-- Khi co 1 van de ve teachnical chua co huong giai queyt thi ben anh xu ly nhu the nao? 
-- Ben anh co meeting technical moi tuan ko 
-- Benh anh co code review hay khong
-- Ben anh Devops hay khong
-- Ben xu dung autoload deploy hay khong
-- Co OT hay khong va OT nhieu hay it
-- ben a code co theo cau truc nao hk
-- Ben a co app dung TDD cho project khong. 
-
-
-
