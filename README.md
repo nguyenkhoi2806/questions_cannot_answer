@@ -419,7 +419,7 @@ useEffect(() => {
 - Sử dụng duy nhất 1 action 
 - Sử dụng batch trong redux 
 
-## Ưu điểm nhược điểm của Redux
+## Ưu điểm của Redux
 - Dể debug vs test 
 - Có tool monitor  
 - Sử dụng dc nhiêu cho thư viện như react vs angular, vujes. 
