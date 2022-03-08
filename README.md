@@ -537,6 +537,9 @@ const squareNum(number){
 - Protected giống như Private nhưng khác 1 điểm là nó có thể được truy xuất bởi instance của lớp kế thừa.
 - Readonly: được sử dụng để làm cho một thuộc tính ở dạng chỉ đọc, có thể được truy cập bên ngoài lớp, nhưng giá trị của chúng không thể thay đổi
 
+### Optional parameters là gì: 
+- là một thuộc tính có thể có hoặc không có 
+
 ## Tại sao quan tâm Mobile first
 - Tối ưu cho người dùng di động
 - Đở tốn thơi gian làm App
