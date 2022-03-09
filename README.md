@@ -379,6 +379,19 @@ Vd: theme, danh mục sản phẩm được chọn, giao diện tuỳ chỉnh, d
 - Khó tiếp cận cho người mới học Web
 - SEO khong hiệu quả 
 
+### Khách nhau Virtualral Dom vs Dom thiệt
+- Real DOM: Update chậm, Có thể update trực tiếp HTML, Tạo ra DOM mới nếu element update,  Lãng phí nhiều bộ nhớ
+- Virtual DOM: Update nhanh, Không thể update trực tiếp HTML, Update JSX nếu element update, Không lãng phí bộ nhớ
+
+### Dom là gì
+- DOM là tên gọi viết tắt của (Document Object Model). Là một chuẩn được định nghĩa bởi W3C. DOM được dùng để truy xuất và thao tác trên các tài liệu có cấu trúc dạng HTML hay XML bằng các ngôn ngữ lập trình thông dụng như Javascript, PHP
+
+### Virtural Dom 
+-  là một Abstraction nhẹ của DOM. việc cập nhập không gây ảnh hưởng tới DOM thực Nó có tất cả các thuộc tính giống như object DOM thật, nhưng nó không có khả năng update trực tiếp như DOM thật. Trong thực tế, các Virtual DOM mới sẽ được tạo sau khi render lại.
+
+## React Dom là gì ? 
+- Thư viện để render element, và dùng element đó render vào Dom là cầu nối giữa React và DOm
+
 ### Tại sao function phải bind ở Contructstor
 Vì những method được khởi tạo trong Class không tự động bind this vào chính nó. Và khi this không được binding vào chúng ta sẽ nhận lỗi undefined khi cố truy cập vào this.state, this.props, this.functionA, this.functionB, blah blah blah.
 
@@ -488,16 +501,12 @@ const squareNum(number){
 - Style component
 - Stateless Component
 
-### Khách nhau Virtualral Dom vs Dom thiệt
-- Real DOM: Update chậm, Có thể update trực tiếp HTML, Tạo ra DOM mới nếu element update,  Lãng phí nhiều bộ nhớ
-- Virtual DOM: Update nhanh, Không thể update trực tiếp HTML, Update JSX nếu element update, Không lãng phí bộ nhớ
-
-### Dom là gì
-- DOM là tên gọi viết tắt của (Document Object Model). Là một chuẩn được định nghĩa bởi W3C. DOM được dùng để truy xuất và thao tác trên các tài liệu có cấu trúc dạng HTML hay XML bằng các ngôn ngữ lập trình thông dụng như Javascript, PHP
-
-### Virtural Dom 
--  là một Abstraction nhẹ của DOM. việc cập nhập không gây ảnh hưởng tới DOM thực Nó có tất cả các thuộc tính giống như object DOM thật, nhưng nó không có khả năng update trực tiếp như DOM thật. Trong thực tế, các Virtual DOM mới sẽ được tạo sau khi render lại.
-
+## Selectors là gì?
+- Nói một cách đơn giản, Selectors một đoạn logic được sử dụng để tính toán ra một giá trị nào đó từ các giá trị có sẵn trong Store hoặc chỉ đơn giản là lấy một giá trị có sẵn trong Store.
+- Tại sao sử dụng selector: 
+- Selectors giúp chúng ta dễ dàng lấy hoặc tính toán một giá trị có sẵn trong Store.
+- Một selectors sẽ không tính toán lại trừ khi một trong các đối số của nó thay đổi.
+- Selectors dễ dàng tái sử dụng, và nó có thể sử dụng để làm đầu vào cho các selector khác.
 
 ## Redux
 ### Cách tổ chức Redux 
@@ -579,16 +588,6 @@ const squareNum(number){
 
 ## Restful API là gì?
 - Restful API là một trong những tiêu chuẩn được sử dụng để thiết kế API cho các ứng dụng web,  truyền tải thông qua HTTP. Một chức năng quan trọng nhất của REST là: quy định các cách sử dụng HTTP method chẳng hạn như: Post, Get, Delete, Put,..
-
-## React Dom là gì ? 
-- Thư viện để render element, và dùng element đó render vào Dom là cầu nối giữa React và DOm
-
-## Selectors là gì?
-- Nói một cách đơn giản, Selectors một đoạn logic được sử dụng để tính toán ra một giá trị nào đó từ các giá trị có sẵn trong Store hoặc chỉ đơn giản là lấy một giá trị có sẵn trong Store.
-- Tại sao sử dụng selector: 
-- Selectors giúp chúng ta dễ dàng lấy hoặc tính toán một giá trị có sẵn trong Store.
-- Một selectors sẽ không tính toán lại trừ khi một trong các đối số của nó thay đổi.
-- Selectors dễ dàng tái sử dụng, và nó có thể sử dụng để làm đầu vào cho các selector khác.
 
 ## Tai sao viet Unitest
 - Tạo ra môi trường lý tưởng để kiểm tra bất kỳ đoạn code nào
