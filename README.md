@@ -389,7 +389,7 @@ Vd: theme, danh mục sản phẩm được chọn, giao diện tuỳ chỉnh, d
 ### Virtural Dom 
 -  là một Abstraction nhẹ của DOM. việc cập nhập không gây ảnh hưởng tới DOM thực Nó có tất cả các thuộc tính giống như object DOM thật, nhưng nó không có khả năng update trực tiếp như DOM thật. Trong thực tế, các Virtual DOM mới sẽ được tạo sau khi render lại.
 
-## React Dom là gì ? 
+### React Dom là gì ? 
 - Thư viện để render element, và dùng element đó render vào Dom là cầu nối giữa React và DOm
 
 ### Tại sao function phải bind ở Contructstor
