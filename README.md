@@ -534,9 +534,16 @@ const squareNum(number){
 ### Typescript là gì: 
 - TypeScript là một ngôn ngữ, hướng đối tượng và biên dịch. Được phát triển bơi Microsoft. Nó là một phần mở rộng của JavaScript.
 
-### Tại sao nên sử dụng Typescript: 
-- Typescript thêm tính năng Static Typing vào JavaScript.C ó tính năng Static Typing giúp dễ dàng phát triển và duy trì các ứng dụng phức tạp hơn.
-- Hỗ trợ định nghĩa kiểu.
+### Ưu điểm: 
+- Typescript thêm tính năng Static Typing vào JavaScript, giúp dễ dàng phát triển và duy trì các ứng dụng phức tạp hơn
+- Giảm tỷ lệ mắc lỗi trong hệ thống
+- Hỗ trợ OOP mạnh
+- 
+### Nhược điểm
+- Bắt buộc dùng biên dịch
+- Bước thiết lập cồng kềnh
+- Chỉ là phần ngôn ngữ mở rộng hỗ trợ
+-  
 
 ### Static Typing là gì?
 - Mỗi biến (variable) có một kiểu cố định liên kết với nó. Kiểu của biến được kiểm tra lúc compiled-time và trình biên dịch yêu cầu ta phải khai báo rõ kiểu của biến trước khi sử dụng.
