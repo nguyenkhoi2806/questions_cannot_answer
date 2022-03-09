@@ -361,6 +361,24 @@ Vd: theme, danh mục sản phẩm được chọn, giao diện tuỳ chỉnh, d
 
 ## ReactJs
 
+###  React hoạt động như thế nào?
+- React tạo ra một DOM ảo.
+- Khi trạng thái thay đổi trong một component, trước tiên nó chạy một thuật toán "khác biệt (diffing)", xác định những gì đã thay đổi trong DOM ảo.
+- Bước thứ hai là điều chỉnh (reconciliation), nơi nó cập nhật DOM với kết quả của khác biệt.
+
+### Ưu 
+- Dễ dàng chia và sử dụng lại component
+- Sử dụng mấy thằng thứ 3 để lên layout, UI như Ant Design rất tiện, đẹp, nhanh chóng.
+- Làm việc với vấn đề test giao diện.
+- Compile source tương đối nhẹ, source tầm 200MB mà deploy ra chỉ tầm gần 1MB.
+- Nhiều thư viện hổ trợ 
+- Biết Reacjs bạn có thể code luôn mobile app.
+
+### Nhược điểm
+- Reactjs chỉ phục vụ cho tầng View
+- Khó tiếp cận cho người mới học Web
+- SEO khong hiệu quả 
+
 ### Tại sao function phải bind ở Contructstor
 Vì những method được khởi tạo trong Class không tự động bind this vào chính nó. Và khi this không được binding vào chúng ta sẽ nhận lỗi undefined khi cố truy cập vào this.state, this.props, this.functionA, this.functionB, blah blah blah.
 
@@ -404,53 +422,17 @@ useEffect(() => {
   };
 }, []);
 ```
-
-### Cách tổ chức Redux 
-- Cách chia store: store sẽ chia theo từng đối tượng. 
-- Sử dụng selectors để lấy các giá trị trong store. tái sử dụng lại các selectors đó. 
-- Sử dụng middleware redux-thunk hoặc saga 
-- Đưa nhiều logic và trong Reducer 
-- Tách các logic phức tạp ra khỏi component
-- Đảm bảo state được tạo ra và sử dụng cho nhiều component. Tránh duplicate state.
-
-### Cách cải thiện Performance Redux 
-- Sử dụng createSelector  
-- Sử dụng duy nhất 1 action 
-- Sử dụng batch trong redux 
-
-### Ưu điểm của Redux
-- Dể debug vs test 
-- Có tool monitor  
-- Sử dụng dc nhiêu cho thư viện như react vs angular, vujes. 
-- Đoán trước dc stage thay đỗi la 
-
-### Nhược điểm Redux
-- Phải hiểu được cách hoạt động của Redux. 
-- Chỉ có 1 store ko chia thành nhiều store => sẽ dẫn đến tình trạng state sẽ bị trùng 
-- Tăng độ phức tap cho codeing  
-
-###  React hoạt động như thế nào?
-- React tạo ra một DOM ảo.
-- Khi trạng thái thay đổi trong một component, trước tiên nó chạy một thuật toán "khác biệt (diffing)", xác định những gì đã thay đổi trong DOM ảo.
-- Bước thứ hai là điều chỉnh (reconciliation), nơi nó cập nhật DOM với kết quả của khác biệt.
-
 ### Higher-Order component (HOC)
 - là một hàm nhận một component và trả về một component mới
 
 ### Refs la gì 
 - Refs thường được dùng để trả về một tham chiếu tới 1 phần tử. Refs cho phép bạn truy cập trực tiếp vào phần tử DOM hoặc một phiên bản của thành phần.
 
-### Redux-Thunk 
-- là một middleware phổ biến nhất được dùng để xử lý các action bất đồng bộ trong Redux
-
 ### Stateless component 
 - là component không phụ thuộc vào life circle
 
 ### Statefull component 
 - Nếu hành vi của một component phụ thuộc vào state của component thì nó có thể được gọi là Stateful component.
-
-### Reducers 
-- là những action handler, nó hoạt động kết nối giữa action và store và biến thành những thay đổi trong state. 
 
 ### React.Memo
 - React.memo là một higher order component, được sử dụng để bọc các component. ghi nhớ lại prop cua component để quyết có render lại hay không.  => Tránh đến việc render lại component ko cần 
@@ -515,6 +497,38 @@ const squareNum(number){
 
 ### Virtural Dom 
 -  là một Abstraction nhẹ của DOM. việc cập nhập không gây ảnh hưởng tới DOM thực Nó có tất cả các thuộc tính giống như object DOM thật, nhưng nó không có khả năng update trực tiếp như DOM thật. Trong thực tế, các Virtual DOM mới sẽ được tạo sau khi render lại.
+
+
+## Redux
+### Cách tổ chức Redux 
+- Cách chia store: store sẽ chia theo từng đối tượng. 
+- Sử dụng selectors để lấy các giá trị trong store. tái sử dụng lại các selectors đó. 
+- Sử dụng middleware redux-thunk hoặc saga 
+- Đưa nhiều logic và trong Reducer 
+- Tách các logic phức tạp ra khỏi component
+- Đảm bảo state được tạo ra và sử dụng cho nhiều component. Tránh duplicate state.
+
+### Cách cải thiện Performance Redux 
+- Sử dụng createSelector  
+- Sử dụng duy nhất 1 action 
+- Sử dụng batch trong redux 
+
+### Ưu điểm của Redux
+- Dể debug vs test 
+- Có tool monitor  
+- Sử dụng dc nhiêu cho thư viện như react vs angular, vujes. 
+- Đoán trước dc stage thay đỗi la 
+
+### Nhược điểm Redux
+- Phải hiểu được cách hoạt động của Redux. 
+- Chỉ có 1 store ko chia thành nhiều store => sẽ dẫn đến tình trạng state sẽ bị trùng 
+- Tăng độ phức tap cho codeing  
+
+### Redux-Thunk 
+- là một middleware phổ biến nhất được dùng để xử lý các action bất đồng bộ trong Redux
+
+### Reducers 
+- là những action handler, nó hoạt động kết nối giữa action và store và biến thành những thay đổi trong state. 
 
 ## Typescript: 
 ### Typescript là gì: 
