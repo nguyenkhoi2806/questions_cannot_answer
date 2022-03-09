@@ -506,6 +506,17 @@ const squareNum(number){
 - Xác minh rằng các method không được sử dụng sẽ cảnh báo bạn trong bảng điều khiển.
 - Giúp ngăn ngừa một số tác dụng phụ bằng cách xác định các nguy cơ tiềm ẩn
 
+### Khi nào sử dụng React.memo ? 
+- Component là functional component
+- Component của bạn thường xuyên bị re-render
+- Component luôn luôn bị re-render mặc dù prop không thay đổi
+- Component của bạn chứa một lượng lớn tính toán logic và UI như Chart, Canvas, 3D library
+
+### Khi nào không nên React.memo ?
+- Nếu component của bạn prop không thay đổi
+- Component của bạn là class component
+- Component của bạn đã được memo bởi một HOC khác, ví dụ connect() của Redux.
+
 ## Redux
 ### Cách tổ chức Redux 
 - Cách chia store: store sẽ chia theo từng đối tượng. 
