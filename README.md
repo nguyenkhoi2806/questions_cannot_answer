@@ -500,13 +500,6 @@ const squareNum(number){
 - Style component
 - Stateless Component
 
-### Selectors là gì?
-- Nói một cách đơn giản, Selectors một đoạn logic được sử dụng để tính toán ra một giá trị nào đó từ các giá trị có sẵn trong Store hoặc chỉ đơn giản là lấy một giá trị có sẵn trong Store.
-- Tại sao sử dụng selector: 
-- Selectors giúp chúng ta dễ dàng lấy hoặc tính toán một giá trị có sẵn trong Store.
-- Một selectors sẽ không tính toán lại trừ khi một trong các đối số của nó thay đổi.
-- Selectors dễ dàng tái sử dụng, và nó có thể sử dụng để làm đầu vào cho các selector khác.
-
 ### StrictMode là gì ? 
 - React là một component trợ giúp sẽ giúp các React component tốt hơn nhiệm vụ chính: 
 - Xác minh rằng các component bên trong đang tuân theo một số phương pháp được đề xuất và cảnh nếu không có trong bảng điều khiển.
@@ -540,6 +533,16 @@ const squareNum(number){
 
 ### Redux-Thunk 
 - là một middleware phổ biến nhất được dùng để xử lý các action bất đồng bộ trong Redux
+
+### Selectors là gì?
+- Nói một cách đơn giản, Selectors một đoạn logic được sử dụng để tính toán ra một giá trị nào đó từ các giá trị có sẵn trong Store hoặc chỉ đơn giản là lấy một giá trị có sẵn trong Store.
+- Tại sao sử dụng selector: 
+- Selectors giúp chúng ta dễ dàng lấy hoặc tính toán một giá trị có sẵn trong Store.
+- Một selectors sẽ không tính toán lại trừ khi một trong các đối số của nó thay đổi.
+- Selectors dễ dàng tái sử dụng, và nó có thể sử dụng để làm đầu vào cho các selector khác.
+
+### Reselect để tạo selectors? 
+- Reselect giúp cải thiện performance vì nó cung cấp một cách để tạo selectors được ghi nhớ và chỉ tính toán lại khi đầu vào của chúng thay đổi. 
 
 ### Reducers 
 - là những action handler, nó hoạt động kết nối giữa action và store và biến thành những thay đổi trong state. 
@@ -599,9 +602,6 @@ const squareNum(number){
 - Phát hiện các thuật toán thực thi không hiệu quả,
 - Phát hiện các vấn đề về thiết kế, xử lý hệ thống,
 - Phát hiện các lỗi nghiêm trọng có thể xảy ra trong những tình huống rất hẹp.
-
-## Reselect để tạo selectors? 
-- Reselect giúp cải thiện performance vì nó cung cấp một cách để tạo selectors được ghi nhớ và chỉ tính toán lại khi đầu vào của chúng thay đổi. 
 
 ## Sass
 - Các chức năng của sass: Variables, Mixin, Import, Function,  Loops, Extends
