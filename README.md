@@ -1,35 +1,35 @@
 ## Javascript
 
-## Bind là gì
+### Bind là gì
 - Cho phép ràng buộc this cho một phương thức (function)
 - Phương thức bin sẽ trả vể 1 hàm mới với context được bind
 - Hàm được trả về từ bind vẫn có thể nhận các đối số của hàm gốc
 
-## Synchronous là gì ? 
+### Synchronous là gì ? 
 - Có nghĩa là xử lý đồng bộ, chương trình sẽ chạy theo từng bước và chỉ khi nào bước 1 thực hiện xong thì mới nhảy sang bước 2, khi nào chương trình này chạy xong mới nhảy qua chương trình khác. 
-### Mặt tốt của Synchronous: 
+#### Mặt tốt của Synchronous: 
 - Chương trình sẽ chạy theo đúng thứ tự và có nguyên tắc nên sẽ không mắc phải các lỗi về tiến trình không cần thiết.
-### Mặt xấu của Synchronous
+#### Mặt xấu của Synchronous
 - Chương trình chạy theo thứ tự đồng bộ nên sẽ sinh ra trạng thái chờ và là không cần thiết trong một số trường hợp, lúc này bộ nhớ sẽ dễ bị tràn vì phải lưu trữ các trạng thái chờ không cần thiết.
 
-## Asynchronous là gì? 
+### Asynchronous là gì? 
 - là xử lý bất động bộ, nghĩa là chương trình có thể nhảy đi bỏ qua một bước nào đó,  được ví như một chương trình hoạt động không chặt chẽ và không có quy trình nên việc quản lý rất khó khăn
-### Mặt tốt của Asynchronous: 
+#### Mặt tốt của Asynchronous: 
 - Có thể xử lý nhiều công việc một lúc mà không cần phải chờ đợi nên tạo cảm giác thoải mái 
-### Mắt xấu: 
+#### Mắt xấu: 
 - Nếu một chuong trình đòi hỏi phải có quy trình thì bạn không thể sử dụng Asynchronous được. vd: Một thao tác thêm dữ liệu phải thông qua hai công đoạn là validate dữ liệu và thêm dữ liệu, nếu thao tác validate xảy ra sau thao tác thêm thì còn gì tệ hại hơn nữa 😃.
 
-## Set Timer function
+### Set Timer function
 - setImmediate() : chạy ngay lập tức (như cái tên của nó) =))
 - setTimeout() : chạy trong một khoảng thời gian. thường được sử dụng nếu  muốn hàm của mình thực thi bao nhiêu mili giây kể từ khi gọi method setTimeout()
 - setInterval(): lặp đi lặp lại trong khoảng thời gian
 
-## Clear timer functions
+### Clear timer functions
 - clearImmediate() : dừng một setImmediate objects, tạo bởi hàm setImmediate()
 - clearTimeout() : dừng một setTimeout objects, tạo bởi hàm setTimeout()
 - clearInterval() : dừng một setInterval objects, tạo bởi hàm setInterval()
 
-## Server side rendering 
+### Server side rendering 
 - Khi người dùng vào một trang web, trình duyệt sẽ gửi GET request tới web server
 - Web server sẽ nhận request, đọc dữ liệu từ database.
 - Web server sẽ render HTML, trả về cho browser để hiển thị cho người dùng
@@ -43,19 +43,18 @@
 - Tốn băng thông vì server phải gửi nhiều dữ liệu thừa và trùng  (HTML, header, footer).
 - Tương tác không tốt như Client Side rendering vì trang phải refresh, load lại nhiều lần.
 
-## Client Side redering
+### Client Side redering
 - SPA – Single Page Application. Ứng dụng nằm trong 1 page duy nhất nên được gọi là Single Page Application.
-### Ưu: 
+#### Ưu: 
 - Page chỉ cần load một lần duy nhất. Khi user chuyển trang hoặc thêm dữ liệu, JavaScript sẽ lấy và gửi dữ liệu từ server qua AJAX
 - Chuyển logic sang client nên giảm tải được một phần cho server.
 - Giảm được băng thông do chỉ cần lấy JSON và dữ liệu cần thiết, thay vì phải lấy toàn bộ trang
 - SPA hoạt động mượt mà hơn vì code chạy trên browser, không cần load đi loại lại nhiều
-### Nhược điểm: 
+#### Nhược điểm: 
 - Initial load sẽ chậm hơn nếu không biết optimize. 
 - Đòi hỏi project phải chia làm 2 phần riêng là back-end (REST api) và front-end
 - Không chạy được nếu JavaScript bị disable, hoặc ở các trình duyệt cũ không nhận JavaScript ES6
 - SEO không tốt bằng Server Side Rendering 
-
 
 ## instance of la gi 
 - Nó trả về true nếu obj thuộc về Class hoặc một lớp kế thừa từ nó.
