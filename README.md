@@ -418,10 +418,10 @@ chính xác giống như Component ngoại trừ việc đó là nó xử lý sh
 vi du chi render khi props vs state thay doi.
 PureComponent dùng cho các React Class Component, còn React Functional Component thì dùng... memo.
  
-### global state
+### Global state
 la 1 state dc su dung o nhieu component khac nhau 
 
-### local state: 
+### Local state: 
 la state dc su dung cho 1 component khai bao state do ma thoi 
 
 ### Su dung componentWillUnmount nhu the nao trong react hook
@@ -501,12 +501,18 @@ const squareNum(number){
 - Style component
 - Stateless Component
 
-## Selectors là gì?
+### Selectors là gì?
 - Nói một cách đơn giản, Selectors một đoạn logic được sử dụng để tính toán ra một giá trị nào đó từ các giá trị có sẵn trong Store hoặc chỉ đơn giản là lấy một giá trị có sẵn trong Store.
 - Tại sao sử dụng selector: 
 - Selectors giúp chúng ta dễ dàng lấy hoặc tính toán một giá trị có sẵn trong Store.
 - Một selectors sẽ không tính toán lại trừ khi một trong các đối số của nó thay đổi.
 - Selectors dễ dàng tái sử dụng, và nó có thể sử dụng để làm đầu vào cho các selector khác.
+
+### StrictMode là gì ? 
+- React là một component trợ giúp sẽ giúp các React component tốt hơn nhiệm vụ chính: 
+- Xác minh rằng các component bên trong đang tuân theo một số phương pháp được đề xuất và cảnh nếu không có trong bảng điều khiển.
+- Xác minh rằng các method không được sử dụng sẽ cảnh báo bạn trong bảng điều khiển.
+- Giúp ngăn ngừa một số tác dụng phụ bằng cách xác định các nguy cơ tiềm ẩn
 
 ## Redux
 ### Cách tổ chức Redux 
