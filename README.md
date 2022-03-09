@@ -110,7 +110,6 @@ alert(c); // kết quả là 13
 - catch: Dùng để xử lý sau khi Promise có bất kỳ lỗi nào đó (khi reject được gọi).
 - finally: là những câu lệnh nằm trong khối mã finally phải được chạy hay được thực thi ở cuối cho dù có lỗi hay không
 
-
 ## High order function 
 là function chấp nhận đầu vào và/hoặc đầu ra là một function được gọi là higher order function.
 
@@ -155,17 +154,17 @@ biên dịch => V8 Engine  chuyển code JavaScript thành mã thay vì dùng in
 This trong javscript để đại diện cho một đối tượng (Object).
 
 ## Khac nhau của var, let, const
-## var 
+### var 
 - Phạm vi hàm (function scope) hoặc phạm vi toàn cục (global scope)
 - Có thể gán lại (Re-assignable) và có thể khai báo lại (Re-declarable)
 - Không thuộc vùng chết tạm thời (Temporal Dead Zone - TDZ)
 
-## let 
+### let 
 - Phạm vi khối (Block scope)
 - Có thể gán lại nhưng không thể khai báo lại
 - Phụ thuộc vào vùng chết tạm thời (TDZ) 
 
-## const
+### const
 - Phạm vi khối
 - Không thể gán lại cũng không thể khai báo lại
 - Phụ thuộc vào vùng chết tạm thời
@@ -263,12 +262,12 @@ function priceAfterTax(productPrice) {
 ```
 
 ## yarn vs npm 
-npm 
+### npm 
 - lấy các dependencies từ kho chứa của nó, nó sẽ cài đặt các dependencies từng cái một sau khi một cái khác được cài đặt xong, vì vậy sẽ mất rất nhiều thời gian.
 - Nếu như một package không có trong NpmJS, hãy quên nó đi.
 - Không hỗ trợ cài đặt offline
 
-yarn
+### yarn
 - Nếu bạn đã cài đặt một package trước đó, Yarn sẽ tạo một bản sao trong bộ nhớ cached để hỗ trợ việc cài đặt offline.
 - Yarn cung cấp một cấu trúc các dependencies bằng phẳng so với cấu trúc lồng nhau của npm.
 
@@ -329,48 +328,48 @@ console.log(res); // 75
 ```
 
 ## Khác nhau localStorage vs sessionStorage vs Cookie
-## LocalStorage 
+### LocalStorage 
 - giống như một database của browser sẽ được lưu trử những thông tin của người dùng browser. Thông tin này được lưu trữ vĩnh viễn tới khi bạn xóa nó đi 
 Vd: theme, danh mục sản phẩm được chọn, giao diện tuỳ chỉnh, dashboard, layout ...
 
-## SessionStorage 
+### SessionStorage 
 - khá giống với localStorage. Ngoại trừ sessionStorage sẽ mất đi khi chúng ta đóng tab, đóng trình duyệt.
 - 1 Khuyết điểm của session Storage vs Local Storage là có thể bị đọc bởi Javascript. Do đó dễ bị đánh cắp thông tin. Vì vậy, chúng ta không nên lưu trữ những thông tin nhạy cảm như token ID, password, username, email của người dùng vào localStorage hay sessionStorage.
 
-## Cookie 
+### Cookie 
 - là một bản ghi đơn giản gồm key, value và được gửi kèm theo request của browser cho nên bạn có thể truy cập và xử lý cookie ở server side dựa vào cookie được gắn kèm với request, giới hạn về dung lượng lưu trữ khoảng 4KB
 - Khi đóng một tab, Cookie vẫn còn được lưu trên trình duyệt.
 - Cookie có thể mất đi sau khi đóng trình duyệt nếu nó được set expires là N/A
 - Cookie có option để chúng ta set ngày quá hạn cho nó. Nghĩa là có thể định nghĩa khi nào nó tự động xoá được. 
 
 ## Các mã status trong http: 
-## 1xx (100 – 199): 
+### 1xx (100 – 199): 
 - Yêu cầu đã được chấp nhận và quá trình xử lý yêu cầu của bạn đang được tiếp tục.
 
-## 2xx (200 – 299): 
+### 2xx (200 – 299): 
 - Yêu cầu của bạn đã được máy chủ tiếp nhận, hiểu và xử lý thành công.
 
-## 3xx (300 – 399): 
+### 3xx (300 – 399): 
 - Phía client cần thực hiện hành động bổ sung để hoàn tất yêu cầu.
 
-## 4xx (400 – 499): 
+### 4xx (400 – 499): 
 - Lỗi phía client – Yêu cầu không thể hoàn tất hoặc yêu cầu chứa cú pháp không chính xác. 4xx sẽ hiện ra khi có lỗi từ phía client do không đưa ra yêu cầu hợp lệ.
 
-## 5xx (500 – 599): 
+### 5xx (500 – 599): 
 - Server errors / Lỗi phía máy chủ – Máy chủ không thể hoàn thành yêu cầu được cho là hợp lệ. Khi 5xx xảy ra, bạn chỉ có thể đợi để bên hệ thống máy chủ xử lý xong.
 
 
 ## ReactJs
 
-## Tại sao function phải bind ở Contructstor
+### Tại sao function phải bind ở Contructstor
 Vì những method được khởi tạo trong Class không tự động bind this vào chính nó. Và khi this không được binding vào chúng ta sẽ nhận lỗi undefined khi cố truy cập vào this.state, this.props, this.functionA, this.functionB, blah blah blah.
 
-## Supper trong reactjs 
+### Supper trong reactjs 
 - Việc gọi super ở đây nhằm mục đích khởi tạo biến this từ Parent, vì  1 Component được thừa kế từ React.Component. Sau khi gọi super, chúng ta sẽ truy cập được this một cách bình thường.
 - Khi làm việc với React thì khi viết constructor mà không có super() thì sẽ lỗi. Không viết super(props) thì sẽ không thể dùng được this.props.
 - Trong Javascript super như là "hàm khởi tạo của class cha" (parent class constructor). 
   
-## Vong doi reactjs 
+### Vong doi reactjs 
 gom 3 pha chinh, Mounting, updating, Unmounting: 
 - Mounting: gom cac ham: constructor, render, componentDidmount, 
 - Updating: gom cac ham : render(), ShouldComponentUpdate, ComponentDiDUpdate, ComponentWillRecieveProps: 
@@ -379,22 +378,22 @@ gom 3 pha chinh, Mounting, updating, Unmounting:
 
 - UnMounting: la giai doan khi component do bi xoa ra khoi Dom.
 
-## Middleware trong reacjs
+### Middleware trong reacjs
 1 mot ham ma khi 1 component goi 1 action truoc khi tra ve store  de update se thong 1 ham moddiware modify sau tra nguoc ve store de update
 thong thuong o day la async wait
 
-## PureComponent 
+### PureComponent 
 chính xác giống như Component ngoại trừ việc đó là nó xử lý shouldComponentUpdate cho bạn. Khi su dung Purecomponent se han che duoc hop khi nao can rerender khi nao khong 
 vi du chi render khi props vs state thay doi.
 PureComponent dùng cho các React Class Component, còn React Functional Component thì dùng... memo.
  
-## global state
+### global state
 la 1 state dc su dung o nhieu component khac nhau 
 
-## local state: 
+### local state: 
 la state dc su dung cho 1 component khai bao state do ma thoi 
 
-## Su dung componentWillUnmount nhu the nao trong react hook
+### Su dung componentWillUnmount nhu the nao trong react hook
 ```
 useEffect(() => {
   // almost same as componentDidMount
@@ -406,7 +405,7 @@ useEffect(() => {
 }, []);
 ```
 
-## Cách tổ chức Redux 
+### Cách tổ chức Redux 
 - Cách chia store: store sẽ chia theo từng đối tượng. 
 - Sử dụng selectors để lấy các giá trị trong store. tái sử dụng lại các selectors đó. 
 - Sử dụng middleware redux-thunk hoặc saga 
@@ -414,52 +413,52 @@ useEffect(() => {
 - Tách các logic phức tạp ra khỏi component
 - Đảm bảo state được tạo ra và sử dụng cho nhiều component. Tránh duplicate state.
 
-## Cách cải thiện Performance Redux 
+### Cách cải thiện Performance Redux 
 - Sử dụng createSelector  
 - Sử dụng duy nhất 1 action 
 - Sử dụng batch trong redux 
 
-## Ưu điểm của Redux
+### Ưu điểm của Redux
 - Dể debug vs test 
 - Có tool monitor  
 - Sử dụng dc nhiêu cho thư viện như react vs angular, vujes. 
 - Đoán trước dc stage thay đỗi la 
 
-## Nhược điểm Redux
+### Nhược điểm Redux
 - Phải hiểu được cách hoạt động của Redux. 
 - Chỉ có 1 store ko chia thành nhiều store => sẽ dẫn đến tình trạng state sẽ bị trùng 
 - Tăng độ phức tap cho codeing  
 
-##  React hoạt động như thế nào?
+###  React hoạt động như thế nào?
 - React tạo ra một DOM ảo.
 - Khi trạng thái thay đổi trong một component, trước tiên nó chạy một thuật toán "khác biệt (diffing)", xác định những gì đã thay đổi trong DOM ảo.
 - Bước thứ hai là điều chỉnh (reconciliation), nơi nó cập nhật DOM với kết quả của khác biệt.
 
-## Higher-Order component (HOC)
+### Higher-Order component (HOC)
 - là một hàm nhận một component và trả về một component mới
 
-## Refs la gì 
+### Refs la gì 
 - Refs thường được dùng để trả về một tham chiếu tới 1 phần tử. Refs cho phép bạn truy cập trực tiếp vào phần tử DOM hoặc một phiên bản của thành phần.
 
-## Redux-Thunk 
+### Redux-Thunk 
 - là một middleware phổ biến nhất được dùng để xử lý các action bất đồng bộ trong Redux
 
-## Stateless component 
+### Stateless component 
 - là component không phụ thuộc vào life circle
 
-## Statefull component 
+### Statefull component 
 - Nếu hành vi của một component phụ thuộc vào state của component thì nó có thể được gọi là Stateful component.
 
-## Reducers 
+### Reducers 
 - là những action handler, nó hoạt động kết nối giữa action và store và biến thành những thay đổi trong state. 
 
-## React.Memo
+### React.Memo
 - React.memo là một higher order component, được sử dụng để bọc các component. ghi nhớ lại prop cua component để quyết có render lại hay không.  => Tránh đến việc render lại component ko cần 
 
-## useSelector = mapStateToProps
-## useDispatch = dispatch 
+### useSelector = mapStateToProps
+### useDispatch = dispatch 
 
-## useMemo
+### useMemo
 -  Tránh thực hiện 1 logic nào đó không cần thiết.  
 -  Chỉ tính toán value mới khi dependencies thay đổi.
 
@@ -475,16 +474,16 @@ const squareNum(number){
  return (<>{ squaredNum }</>)
 ```
 
-## useCallback
+### useCallback
 - Giúp mình tránh tạo ra hàm mới 1 cách không cần thiết, và chỉ tạo ra function mới khi dêpndencies thay đổi .
 - Nếu dùng empty dependencies thì không bao giờ tạo ra function mới ,
 - Tránh đến việc rerender không cần thiết giữa component cha va component con 
  
-## React.memo vs shouldComponentUpdate
+### React.memo vs shouldComponentUpdate
 -  React.memo là một higher order component (HOC) được sinh ra nhằm sử dụng cho các functional component trong việc tối ưu hiệu suất render,  React.memo chỉ có thể xác định việc rerender dựa trên sự thay đổi của props 
 -  shouldComponentUpdate là một method của class based component, shouldComponentUpdate có thể xác định việc rerender dựa trên sự thay đổi của cả props và state.
 
-## Custom hook 
+### Custom hook 
 - Là một function, nhận input và trả output.
 - Tên của nó bắt đầu bởi use như useQuery, useColor, …
 - Khác với functional component, custom hooks trả về một dữ liệu bình thường, không phải là jsx.
@@ -493,13 +492,13 @@ const squareNum(number){
 - Chia sẻ dữ liệu, logic giữa các component.
 - Ẩn các đoạn code có logic phức tạp của một component, giúp component dễ đọc hơn.
 
-## React fragment
+### React fragment
 - React Fragment cho phép bọc các elemnt bên trong. 
 
-## React và ReactDOM
+### React và ReactDOM
 - React và ReactDOM chỉ mới được chia thành hai thư viện khác nhau. ReactDOM trưng bày các phương thức dành riêng cho DOM, trong khi React có các công cụ cốt lõi được React chia sẻ trên các nền tảng khác nhau
 
-## Design parten pho bien react
+### Design parten pho bien react
 - Condition Rendering
 - High order component 
 - Container component
@@ -507,14 +506,14 @@ const squareNum(number){
 - Style component
 - Stateless Component
 
-## Khách nhau Virtualral Dom vs Dom thiệt
+### Khách nhau Virtualral Dom vs Dom thiệt
 - Real DOM: Update chậm, Có thể update trực tiếp HTML, Tạo ra DOM mới nếu element update,  Lãng phí nhiều bộ nhớ
 - Virtual DOM: Update nhanh, Không thể update trực tiếp HTML, Update JSX nếu element update, Không lãng phí bộ nhớ
 
-## Dom là gì
+### Dom là gì
 - DOM là tên gọi viết tắt của (Document Object Model). Là một chuẩn được định nghĩa bởi W3C. DOM được dùng để truy xuất và thao tác trên các tài liệu có cấu trúc dạng HTML hay XML bằng các ngôn ngữ lập trình thông dụng như Javascript, PHP
 
-## Virtural Dom 
+### Virtural Dom 
 -  là một Abstraction nhẹ của DOM. việc cập nhập không gây ảnh hưởng tới DOM thực Nó có tất cả các thuộc tính giống như object DOM thật, nhưng nó không có khả năng update trực tiếp như DOM thật. Trong thực tế, các Virtual DOM mới sẽ được tạo sau khi render lại.
 
 ## Typescript: 
@@ -607,7 +606,7 @@ padding: 10 0 0 10px;
 
 ## Css
 
-## FlexBox:
+### FlexBox:
 - Gồm Container và items; 
 - Container:
 - main-axis: quyết định hướng của các items 
@@ -629,10 +628,10 @@ padding: 10 0 0 10px;
 - flex-shrink: Dùng để thu nhỏ lại
 - order: quuyết định thứ tự item. 
 
-## BEM 
+### BEM 
 - viet tac cua Block Element Modifier
 
-## Css Unit
+### Css Unit
 - Asolute unit: px, pt, cm, pc. S
 - Relative unit: 
 - %: Kích thước phụ thuộc vào thẻ chứa nó. 
@@ -641,26 +640,26 @@ padding: 10 0 0 10px;
 - vw (viewport width): ví dụ (1vw: có nghĩa là 1% chiều dọc ngang của kích thuớc trình duyệt)
 - vh (viewport hieght): ví dụ (1vh: có nghĩa là 1% chiều dọc đứng của kích thuớc trình duyệt)
 
-## Background-clip: 
+### Background-clip: 
 - Quyết định background đổ từ ranh giới nào.
 - border-box: đổ background từ border vào bên trong
 - padding-box: đổ backgrounnd từ padding
 - content-box: đổ background từ content. 
 
-## Background-size
+### Background-size
 - contain: lấy chiều dài nhất có thể đảm bảo hình ảnh không bị cắt xén
 - cover: chọn chiều nhất của ảnh nhưng sẽ che khuất ảnh và sẻ không hở khoảng trắng
  
-## Background-origin: giong background-clip nhưng dùng đi kèm với background-image
+### Background-origin: giong background-clip nhưng dùng đi kèm với background-image
 
-## Function css
+### Function css
 - var(): đặt biến cho css; 
 - linear-gradient: tạo ra 1 dải màu chuyễn đều đặn từ trái sang phải hoặc từ trên xuống dưới
 - rgba: red, green, blue, alpha ( độ trong suốt) 
 - calc: tính toán 
 - attr: lấy dc content attr trong html
 
- ## Pseduo-classes
+### Pseduo-classes
  - lớp giả
  - :root: tham chiếu đến phần tử gốc html 
  - :hover: tham chiếu đến phần tử đang được hover
@@ -668,7 +667,7 @@ padding: 10 0 0 10px;
  - :first-child: tham chiếu đến phần tử đầu tiên của class đó
  - :last-child: tham chiếu đến phần tử cuối cùng của class đó
 
-## Pseduo-element 
+### Pseduo-element 
 - phần tử giả
 - ::before 
 - ::after
@@ -676,7 +675,7 @@ padding: 10 0 0 10px;
 - ::first-line: dòng chữ đầu tiên 
 - ::selection: tham chiếu khi select nôi dung trên trình duyệt
 
-## Position
+### Position
 - Thiết lập vị trí cho các element
 - Relative: tương đối, sẽ không phụ thuộc vào đối tượng nào khác chỉ phụ thuộc vào chính element đó
 - Absolute: vị trí tuyệt đối sẽ phụ thuộc vào thẻ cha gần nhất có thuộc tính position. 
@@ -684,21 +683,15 @@ padding: 10 0 0 10px;
 - sticky: sẽ cố định phần tử khi trình duyệt scroll đến phần tử đó
 
 ## Câu hỏi ngoài lề
-## Khi lap trinh can quan tam dieu gi:
-- Xac dinh tinh nang cua feature do la gi ? 
-- Xac dinh cac step de code feature do: - luot so qa, nhung function nao se duoc su dung lai, function nao chua co thi viet ra cai moi.   
-- Neu Feature business do phuc tap thi viet lai document
-- Code: => test => clean lai code dư thì bỏ, xem lại tên biến , function có hợp lý chưa
 
-## Solid principle: 
+### Solid principle: 
 - single responsiple principle: moi 1 calss chi dam nhiem 1 chuc nang duy nhat
 - open close: khi co 1 chuc nang moi thi nen mo rorng class, hoa viet 1 class moi ke thua class do khong nen ssua lai class cu 
 - linkos principle: Cac interface class con co the thay class cha ma kohng gay ra loi 
 - interface segregration: 1 tinterface lon  nen chia ra nhieu interface nho 
 - depenci inversion: cac thanh phan trong module phu thuoc vao class abtract khong nen phu thuoc vao ca
 
-
-## Design parten
+### Design parten
 Nói một cách đơn giản, design pattern là các mẫu thiết kế có sẵn, dung để giải quyết một vấn đề, Áp dụng mẫu thiết kế này sẽ làm code dễ bảo trì, mở rộng hơn, 3 loại chính
 - Creational Pattern tập hợp các giải pháp liên quan đến khởi tạo đối tượng.
 Nhóm này gồm 5 mẫu thông dụng: 
