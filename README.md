@@ -392,7 +392,8 @@ Vd: theme, danh mục sản phẩm được chọn, giao diện tuỳ chỉnh, d
 - Thư viện để render element, và dùng element đó render vào Dom là cầu nối giữa React và DOm
 
 ### Tại sao function phải bind ở Contructstor
-Vì những method được khởi tạo trong Class không tự động bind this vào chính nó. Và khi this không được binding vào chúng ta sẽ nhận lỗi undefined khi cố truy cập vào this.state, this.props, this.functionA, this.functionB, blah blah blah.
+- Lấy đúng context (ngữ cảnh) mà mình cần để dùng ở trong function đó.
+- Tránh việc sinh ra một method mới.
 
 ### Supper trong reactjs 
 - Việc gọi super ở đây nhằm mục đích khởi tạo biến this từ Parent, vì  1 Component được thừa kế từ React.Component. Sau khi gọi super, chúng ta sẽ truy cập được this một cách bình thường.
