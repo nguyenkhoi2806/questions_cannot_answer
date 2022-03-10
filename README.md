@@ -456,7 +456,6 @@ useEffect(() => {
 
 ### Khi nào sử dụng React.memo ? 
 - Component là functional component
-- Component của bạn thường xuyên bị re-render
 - Component luôn luôn bị re-render mặc dù prop không thay đổi
 - Component của bạn chứa một lượng lớn tính toán logic và UI như Chart, Canvas, 3D library
 
@@ -495,7 +494,7 @@ const squareNum(number){
 - Đều là react hooks, dùng cho functional component.
 - Dùng để hạn chế những lần re-render dư thừa (micro improvements).
 
-#### KHÁC NHAU
+#### KHÁC NHAU:
 - useCallback dùng để memoized callback
 - UseMemo memoized value
 
