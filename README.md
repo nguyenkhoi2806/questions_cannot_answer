@@ -1,5 +1,19 @@
 ## Javascript
 
+### Ưu điểm:
+- Thoải mái khi sử dụng, không bị ràng buộc kiểu dữ liệu.
+- Ðỡ tốn thời gian setup ban đầu, vào dự án là có thể code liền dược.
+- Code một mình là bao sướng.
+
+### Nhược điểm:
+- Lâu lâu quay lại, ko nhớ tên thuộc tính hay phương thức phải tra cứu lại. (nó hổng có nhắc 😅 )
+- Phải hiểu cách hoạt động của JS, nhiều lúc nó hơi ma thuật 🤣 Ðiều này gây hơi khó khắn tí cho mấy bạn mới.
+
+### Nên dùng cho:
+- Dự án vừa và nhỏ.
+- Team ít người (1-5 người)
+- Có kinh nghiệm làm việc với Javascript.
+
 ### Bind là gì
 - Cho phép ràng buộc this cho một phương thức (function)
 - Phương thức bin sẽ trả vể 1 hàm mới với context được bind
@@ -324,7 +338,7 @@ const res = data.reduce((total,currentValue) => {
   return total + currentValue;
 });
 console.log(res); // 75
-```
+
 
 ## Khác nhau localStorage vs sessionStorage vs Cookie
 ### LocalStorage 
@@ -594,6 +608,12 @@ const squareNum(number){
 - Phải tốn thời gian setup ban đầu + khai báo kiểu dữ liệu.
 - Ðôi khi việc khai báo kiểu dữ liệu nhiều quá khiến code trở nên rườm rà.
 - Giữ phần khai báo dữ liệu up to date.
+
+### Nên dùng cho:
+- Dự án lớn.
+- Team có nhiều người cùng code (>5 người)
+- Chưa quen làm việc với kiểu dynamic type của JS.
+
 
 ### Tại sao Typescript hỗ trợ Opp tót hơn javscript 
 - Hổ trợ nhiều biến dữ liệu mà  javscript ko có
