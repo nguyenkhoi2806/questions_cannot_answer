@@ -446,8 +446,23 @@ useEffect(() => {
 ### Statefull component 
 - Nếu hành vi của một component phụ thuộc vào state của component thì nó có thể được gọi là Stateful component.
 
+### Memoization
+- Tính toán và lưu kết quả cho từng bộ input.
+- Khi gặp lại bộ input đã từng làm thì không tính toán lại, mà trả về kết quả sẵn có.
+
 ### React.Memo
 - React.memo là một higher order component, được sử dụng để bọc các component. ghi nhớ lại prop cua component để quyết có render lại hay không.  => Tránh đến việc render lại component ko cần 
+
+### Khi nào sử dụng React.memo ? 
+- Component là functional component
+- Component của bạn thường xuyên bị re-render
+- Component luôn luôn bị re-render mặc dù prop không thay đổi
+- Component của bạn chứa một lượng lớn tính toán logic và UI như Chart, Canvas, 3D library
+
+### Khi nào không nên React.memo ?
+- Nếu component của bạn prop không thay đổi
+- Component của bạn là class component
+- Component của bạn đã được memo bởi một HOC khác, ví dụ connect() của Redux.
 
 ### useSelector = mapStateToProps
 ### useDispatch = dispatch 
@@ -455,7 +470,6 @@ useEffect(() => {
 ### useMemo
 -  Tránh thực hiện 1 logic nào đó không cần thiết.  
 -  Chỉ tính toán value mới khi dependencies thay đổi.
-
 ```
  const squaredNum = useMemo(()=> {
     return squareNum(number);
@@ -467,12 +481,26 @@ const squareNum(number){
 }
  return (<>{ squaredNum }</>)
 ```
-
+ 
 ### useCallback
 - Giúp mình tránh tạo ra hàm mới 1 cách không cần thiết, và chỉ tạo ra function mới khi dêpndencies thay đổi .
 - Nếu dùng empty dependencies thì không bao giờ tạo ra function mới ,
 - Tránh đến việc rerender không cần thiết giữa component cha va component con 
- 
+
+### So sánh useCallback() vs useMemo()
+#### GIỐNG NHAU: 
+- Đều áp dụng kĩ thuật memoization.
+- Đều nhận vào 2 tham số: function và dependencies.
+- Đều là react hooks, dùng cho functional component.
+- Dùng để hạn chế những lần re-render dư thừa (micro improvements).
+
+#### KHÁC NHAU
+- useCallback dùng để memoized callback
+- UseMemo memoized value
+
+### Có nên sử dụng useCallback() vs useMemo() hay không?
+- Nên dùng cho: đồ thị, biểu đồ, animations, những component nặng phần render.
+
 ### React.memo vs shouldComponentUpdate
 -  React.memo là một higher order component (HOC) được sinh ra nhằm sử dụng cho các functional component trong việc tối ưu hiệu suất render,  React.memo chỉ có thể xác định việc rerender dựa trên sự thay đổi của props 
 -  shouldComponentUpdate là một method của class based component, shouldComponentUpdate có thể xác định việc rerender dựa trên sự thay đổi của cả props và state.
@@ -506,16 +534,6 @@ const squareNum(number){
 - Xác minh rằng các method không được sử dụng sẽ cảnh báo bạn trong bảng điều khiển.
 - Giúp ngăn ngừa một số tác dụng phụ bằng cách xác định các nguy cơ tiềm ẩn
 
-### Khi nào sử dụng React.memo ? 
-- Component là functional component
-- Component của bạn thường xuyên bị re-render
-- Component luôn luôn bị re-render mặc dù prop không thay đổi
-- Component của bạn chứa một lượng lớn tính toán logic và UI như Chart, Canvas, 3D library
-
-### Khi nào không nên React.memo ?
-- Nếu component của bạn prop không thay đổi
-- Component của bạn là class component
-- Component của bạn đã được memo bởi một HOC khác, ví dụ connect() của Redux.
 
 ## Redux
 ### Cách tổ chức Redux 
