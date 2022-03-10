@@ -585,12 +585,15 @@ const squareNum(number){
 - Typescript thêm tính năng Static Typing vào JavaScript, giúp dễ dàng phát triển và duy trì các ứng dụng phức tạp hơn 
 - Hỗ trợ OOP mạnh
 - Với static typing (kiểm tra lỗi lúc compile time), code viết bằng TypeScript dễ dự đoán hơn, và dễ debug hơn.
-- là mã nguồn mở vì vậy nó miễn phí 
+- Nhắc code tuyệt vời 😍
+- Truyền sai kiểu dữ liệu là nó chửi =))
+- Lâu lâu quay lại code hoặc người khác code cho mình thì đều được nhắc tên thuộc tính, phương thức
 
 ### Nhược điểm
 - Bắt buộc dùng biên dịch
-- Bước thiết lập cồng kềnh
-- Chỉ là phần ngôn ngữ mở rộng hỗ trợ
+- Phải tốn thời gian setup ban đầu + khai báo kiểu dữ liệu.
+- Ðôi khi việc khai báo kiểu dữ liệu nhiều quá khiến code trở nên rườm rà.
+- Giữ phần khai báo dữ liệu up to date.
 
 ### Tại sao Typescript hỗ trợ Opp tót hơn javscript 
 - Hổ trợ nhiều biến dữ liệu mà  javscript ko có
