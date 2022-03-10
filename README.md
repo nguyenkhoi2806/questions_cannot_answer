@@ -338,6 +338,7 @@ const res = data.reduce((total,currentValue) => {
   return total + currentValue;
 });
 console.log(res); // 75
+```
 
 
 ## Khác nhau localStorage vs sessionStorage vs Cookie
