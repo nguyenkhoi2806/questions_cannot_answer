@@ -452,6 +452,7 @@ useEffect(() => {
 
 ### React.Memo
 - React.memo là một higher order component, được sử dụng để bọc các component. ghi nhớ lại prop cua component để quyết có render lại hay không.  => Tránh đến việc render lại component ko cần 
+- 
 
 ### Khi nào sử dụng React.memo ? 
 - Component là functional component
