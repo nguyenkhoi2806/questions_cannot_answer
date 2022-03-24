@@ -25,6 +25,15 @@
 ### Apply là gì
 - Phương thức này cho phép gọi 1 hàm với 1 this và truyền đối số cho hàm gốc dưới dạng 	
 
+### Giống nhau bind call Apply
+- Đều là function từ protoype 
+
+### Khác nhau  bind call Apply
+- Bind sẽ trả ra hàm mới , không thực hiện hàm, Nếu bind trực tiếp vs this, argument, thì sẽ ưu tiên argument hơn 
+- Call sẽ ko trả ra hàm mới, thực hiện dc bind và sẽ tự động gọi hàm. 
+- Appyly giống call nhận đối số cho hàm gốc bằng đối số thứ 2 dưới dạng mảng.
+
+
 ### Synchronous là gì ? 
 - Có nghĩa là xử lý đồng bộ, chương trình sẽ chạy theo từng bước và chỉ khi nào bước 1 thực hiện xong thì mới nhảy sang bước 2, khi nào chương trình này chạy xong mới nhảy qua chương trình khác. 
 #### Mặt tốt của Synchronous: 
