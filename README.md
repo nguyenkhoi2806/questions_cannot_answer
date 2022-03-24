@@ -19,6 +19,12 @@
 - Phương thức bin sẽ trả vể 1 hàm mới với context được bind
 - Hàm được trả về từ bind vẫn có thể nhận các đối số của hàm gốc
 
+### Call là gì 
+- là 1 phương thức trong prototype của function dùng để gọi hàm và củng có thế bind this cho hàm
+
+### Apply là gì
+- Phương thức này cho phép gọi 1 hàm với 1 this và truyền đối số cho hàm gốc dưới dạng 	
+
 ### Synchronous là gì ? 
 - Có nghĩa là xử lý đồng bộ, chương trình sẽ chạy theo từng bước và chỉ khi nào bước 1 thực hiện xong thì mới nhảy sang bước 2, khi nào chương trình này chạy xong mới nhảy qua chương trình khác. 
 #### Mặt tốt của Synchronous: 
